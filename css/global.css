@@ -773,6 +773,23 @@ ul.listNof li:hover a.btnRead {
 	overflow:auto;
 	-webkit-overflow-scrolling: touch;
 }
+.menuChannel ul li {
+	position:relative;	
+	background-color:#ffffff;
+	-webkit-transition: background-color 200ms ease-in;
+	-moz-transition: background-color 200ms ease-in;
+	-ms-transition: background-color 200ms ease-in;
+	-o-transition: background-color 200ms ease-in;
+	transition: background-color 200ms ease-in;	
+}
+.menuChannel ul li button.btnEditChannel {
+	position:absolute;
+	top:10px;
+	right:10px;	
+	background:none;
+	border:none;
+	display:none;
+}
 .swithChannel {
 	border-bottom:1px solid #eeeeee;
 	padding:10px 15px;	
@@ -782,17 +799,16 @@ ul.listNof li:hover a.btnRead {
 	color:#454545;
 	padding:10px 15px;
 	display:block;
-	background-color:#ffffff;
 	border-bottom:1px solid #eeeeee;
-	-webkit-transition: background-color 200ms ease-in;
-	-moz-transition: background-color 200ms ease-in;
-	-ms-transition: background-color 200ms ease-in;
-	-o-transition: background-color 200ms ease-in;
-	transition: background-color 200ms ease-in;	
 }
-.menuChannel ul li a:hover {
+.menuChannel ul li:hover {
 	background-color:#e64b3a;
-	color:#ffffff;	
+}
+.menuChannel ul li:hover a, .menuChannel ul li:hover button.btnEditChannel {
+	color:#ffffff;
+}
+.menuChannel ul li:hover button.btnEditChannel {
+	display:block;	
 }
 .userName {
 	float:left;	
