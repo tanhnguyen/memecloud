@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1200px" /> 
+    <title>Upload | MeMe Cloud</title>
+    <!-- Global CSS -->
+    <link href="css/font-awesome.css" type="text/css" rel="stylesheet">
+    <link href="css/reset.css" type="text/css" rel="stylesheet">
+    <link href="css/global.css" type="text/css" rel="stylesheet">
+    <!-- End Global CSS -->
+    
+    <!-- Page CSS -->
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <link href="css/jquery.tagsinput.css" type="text/css" rel="stylesheet">
+    <link href="css/sumoselect.css" type="text/css" rel="stylesheet">
+    <link href="css/datepicker.css" rel="stylesheet">
+    <!-- End Page CSS -->
+    
+    <!-- Global Script -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/placeholder.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
+    <script src="js/disableScrollBar.js"></script>
+    <script src="js/global.js"></script>
+    <!-- End Global Script -->
+    
+    <!-- Page Script -->
+    <script src="js/jquery.tagsinput.min.js"></script>
+    <script src="js/jquery.sumoselect.min.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    
+    <script src="js/upload.js"></script>
+    <!--End Page Script -->
+</head>
+
+<body>
+	
+    <div class="wrapper">
+    	
+        <div class="container">
+        
+            <div class="containerTable">
+            
+                <div class="sidebar">
+                    <div class="sidebarFixed">
+                        <div class="logo">
+                            <a href="#" title="Meme Cloud">Meme Cloud</a>
+                        </div>
+                        
+                        <div class="mainMenu">
+    
+                            <ul id="nav">
+                              <li><a href="#" class="active"><i class="fa fa-video-camera"></i>Video <span class="icoDown fa fa-chevron-down"></span></a>
+                                <ul>
+                                  <li><a href="allVideo.html">Tất cả video</a></li>
+                                  <li><a href="allVideoApprove.html">Duyệt video<span class="numMenu">20</span></a></li>
+                                  <li><a href="#" class="selected">Upload video mới</a></li>
+                                  <li><a href="uploadBulk.html">Upload cùng lúc</a></li>
+                                  <li><a href="allPlaylist.html">Danh sách phát</a></li>
+                                  <li><a href="categoryManager.html">Quản lý chuyên mục</a></li>
+                                  <li><a href="playerSetting.html">Cài đặt Player</a></li>
+                                </ul>
+                              </li>
+                              <li><a href="#"><i class="fa fa-bar-chart-o"></i>Thống kê<span class="icoDown fa fa-chevron-down"></span></a>
+                                <ul>
+                                  <li><a href="analytics.html">Tổng quan</a></li>
+                                  <li><a href="#">Theo người dùng</a></li>
+                                </ul>
+                              </li>
+                              <li><a href="userManager.html"><i class="fa fa-user"></i>Người dùng</a>
+                              </li>
+                              <li><a href="#"><i class="fa fa-bullhorn"></i>Quảng cáo<span class="icoDown fa fa-chevron-down"></span></a>
+                                <ul>
+                                  <li><a href="domainManager.html">Quản lý trang web</a></li>
+                                  <li><a href="adMannagerGlobal.html">Quản lý Adtag</a></li>
+                                </ul>
+                              </li>
+                            </ul>
+                            
+                        </div>
+                    </div>
+                    
+                </div><!--end sidebar -->
+                
+                <div class="wrapperContent">
+                	
+                    <div class="header clearfix">
+                    	
+                        <div class="searchBox">
+                        	<button type="submit" class="btn btnSearch"><i class="fa fa-search"></i></button>
+                            <input class="formGlobal seachInput" placeholder="Nhập tên hoặc id video..." />
+                        </div>
+                        
+                        <div class="account">
+                        	<div class="userAcount dropdown">
+                            	<a href="#" class="channelName btnDropdown">Đời sống & pháp luật<i class="fa fa-caret-down"></i></a>
+                                <div class="dropdownDiv menuChannel">
+                                	<div class="swithChannel">Quản lý channel:</div>
+                                    <ul class="scrollable">
+                                        <li><a href="#">Tin Mới</a></li>
+                                        <li><a href="#">Thể Thao 24/7</a></li>
+                                        <li><a href="#">Người Đưa Tin</a></li>
+                                        <li><a href="#">Tin Mới</a></li>
+                                        <li><a href="#">Thể Thao 24/7</a></li>
+                                        <li><a href="#">Người Đưa Tin</a></li>
+                                        <li><a href="#">Tin Mới</a></li>
+                                        <li><a href="#">Thể Thao 24/7</a></li>
+                                        <li><a href="#">Người Đưa Tin</a></li>
+                                        <li><a href="#">Tin Mới</a></li>
+                                        <li><a href="#">Thể Thao 24/7</a></li>
+                                        <li><a href="#">Người Đưa Tin</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        	<div class="notification"><a href="upload.html" class="notificationIco"><i class="fa fa-cloud-upload"></i></a></div>
+                        	<div class="notification dropdown">
+                            	<a href="#" class="notificationIco btnDropdown"><i class="fa fa-bell"></i><span class="numNof">2</span></a>
+                                <div class="dropdownDiv boxNof">
+                                	<div class="headBoxNof">
+                                    	Bạn có 2 thông báo <a href="#" class="btnReadAsAll">Đã xem tất cả</a>
+                                    </div>
+                                    <ul class="listNof scrollable">
+                                    	<li>
+                                        	<a class="unread" href="activityVideo.html">Video <span class="boldNof">Muôn kiểu hành xử 'xấu' của người Việt khi gặp Cảnh sát giao thông</span> do <span class="boldNof">Phước Anh</span> upload đề nghị bạn duyệt <br /> <span class="timeNof">25 phút trước</span></a>
+                                            <a href="#" class="btnRead tooltipText" title="Đã xem"><i class="fa fa-circle-o"></i></a>
+                                        </li>
+                                        <li>
+                                        	<a href="#">Video <span class="boldNof">Ebola chính thức bị dập tắt</span> do <span class="boldNof">bạn</span> upload đã sẵn sàng sử dụng <br /> <span class="timeNof">2 phút trước</span></a>
+                                        </li>
+                                        <li>
+                                        	<a class="unread" href="activityVideo.html">Video <span class="boldNof">Muôn kiểu hành xử 'xấu' của người Việt khi gặp Cảnh sát giao thông</span> do <span class="boldNof">Phước Anh</span> upload đề nghị bạn duyệt <br /> <span class="timeNof">25 phút trước</span></a>
+                                            <a href="#" class="btnRead tooltipText" title="Đã xem"><i class="fa fa-circle-o"></i></a>
+                                        </li>
+                                        <li>
+                                        	<a href="#"><span class="boldNof">Bạn</span> đang có 4 video chờ duyệt <br /> <span class="timeNof">1 giờ trước</span></a>
+                                        </li>
+                                        <li>
+                                        	<a href="#">Video <span class="boldNof">Đua xe trái phép tại Bình Dương</span> của <span class="boldNof">Bạn</span> bị <span class="boldNof">Kevin Vu</span> từ chối <br /> <span class="timeNof">2 giờ trước</span></a>
+                                        </li>
+                                        <li>
+                                        	<a href="#">Video <span class="boldNof">Ebola chính thức bị dập tắt</span> do <span class="boldNof">bạn</span> upload đã sẵn sàng sử dụng <br /> <span class="timeNof">2 phút trước</span></a>
+                                        </li>
+                                        <li>
+                                        	<a href="#"><span class="boldNof">Bạn</span> đang có 4 video chờ duyệt <br /> <span class="timeNof">1 giờ trước</span></a>
+                                        </li>
+                                        <li>
+                                        	<a href="#">Video <span class="boldNof">Đua xe trái phép tại Bình Dương</span> của <span class="boldNof">Bạn</span> bị <span class="boldNof">Kevin Vu</span> từ chối <br /> <span class="timeNof">2 giờ trước</span></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="notification userAcount dropdown">
+                            	<a href="#" class="notificationIco userName btnDropdown"><i class="fa fa-cog"></i></a>
+                                <a href="#" class="userThumb"><img src="images/user.jpg" alt="Messi" /></a>
+                                <ul class="dropdownDiv menuAccount">
+                                	<li><a href="changeProfile.html"><i class="fa fa-edit"></i>Đổi thông tin tài khoản</a></li>
+                                    <!--<li><a href="#"><i class="fa fa-user"></i>Tình trạng tài khoản</a></li>-->
+                                    <li><a href="support.html"><i class="fa fa-envelope"></i>Hỗ trợ</a></li>
+                                    <li><a href="#"><i class="fa fa-sign-out"></i>Thoát</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                    </div><!--end header -->
+                    
+                    
+                    <div class="content">
+                        
+                        <div class="boxContent">
+                            <ul class="breadcrumb clearfix">
+                                <li><a href="#">Meme Cloud</a><i class="fa fa-angle-right"></i></li>
+                                <li class="active">
+                                    Upload video mới
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="tabsGlobal">
+                            <div class="rowForm">
+                                <div class="btnsUpload clearfix">
+                                    <div class="btn blue btnUploadFile">
+                                        <i class="fa fa-cloud-upload"></i>Upload file video
+                                        <input type="file" name="upload"/>
+                                    </div>
+                                    <a href="#" class="btn orange btnLinkVideo"><i class="fa fa-link"></i>Link Video</a> 
+                                    <div class="enterLinkVideo">
+                                        <input type="text" class="formGlobal" placeholder="Nhập link video" />
+                                        <button type="submit" class="btn btnPrimary">Đồng ý</button>
+                                    </div>
+                                    <div class="nameFile"><span class="preloader"><img src="images/preloader.gif" width="32" height="32" /></span> File Dung_xa_em_dem_nay.mp4 (230MB)</div>                                           
+                                </div>
+                                
+                                <div class="processUpload">
+                                    <div class="processStatus" style="width:80%;"></div>
+                                    <span class="processStatusTxt">Video đang xử lý 80%</span>
+                                    <a href="#" class="btnCancelUpload tooltipText" title="Hủy upload"><i class="fa fa-times"></i></a>
+                                </div>
+                            </div>
+                
+                            <ul class="tabs">
+                                <li class="current"><a href="#basicUpload">Cơ bản </a></li>
+                                <li><a href="#advanceUpload">Nâng cao</a></li>
+                            </ul>
+                            
+                            <div class="tabsContentGlobal">
+                            
+                                <div id="basicUpload" class="tableData current">
+                                    
+                                    <div class="rowForm">
+                                        <div class="formUpload clearfix">
+                                            <div class="col50p">
+                                                <div class="formGroup">
+                                                  <label>Tiêu đề:</label>
+                                                  <input type="text" class="formGlobal" placeholder="Nhập tiêu đề">
+                                                </div>
+                                                <div class="formGroup">
+                                                  <label>Miêu tả:</label>
+                                                  <textarea class="formGlobal" placeholder="Nhập miêu tả" rows="3"></textarea>
+                                                </div>
+                                                <div class="formGroup">
+                                                  <label>Từ khóa:</label>
+                                                  <input name="tags" id="tags" value="mang xã hội,sáng tạo video,cong dong sang tao" />
+                                                </div>
+                                            </div>
+                                            <div class="col50p">
+                                                <div class="formGroup">
+                                                  <label>Thể loại:</label>
+                                                  <select name="category" multiple="multiple" class="selectSection">
+                                                    <option value="option1">Thể thao</option>
+                                                    <option value="option2">Tin tức</option>
+                                                    <option value="option3">Hoạt hình</option>
+                                                    <option value="option4">Trẻ em</option>
+                                                    <option value="option5">Nghệ thuật</option>
+                                                    <option value="option6">Sản phẩm</option>
+                                                    <option value="option7">Ẩm thực</option>
+                                                    <option value="option1">Thể thao</option>
+                                                    <option value="option2">Tin tức</option>
+                                                    <option value="option3">Hoạt hình</option>
+                                                    <option value="option4">Trẻ em</option>
+                                                    <option value="option5">Nghệ thuật</option>
+                                                    <option value="option6">Sản phẩm</option>
+                                                    <option value="option7">Ẩm thực</option>
+                                                  </select>
+                                                </div>
+                                                <div class="formGroup">
+                                                  <label>Chuyên mục:</label>
+                                                  <div class="wselect">
+                                                      <select name="category" multiple="multiple" class="selectCategory">
+                                                        <option value="option1">Top 20 MV 2014</option>
+                                                        <option value="option2">Hài chọn lọc</option>
+                                                        <option value="option3">Hoạt hình 247</option>
+                                                      </select>
+                                                      <button type="button" class="btn btnDefault">Tạo thêm chuyên mục</button>
+                                                  </div>
+                                                </div>
+                                                <div class="formGroup">
+                                                    <label>Hình đại diện:</label>
+                                                    <div class="thumbUpload">
+                                                        <img src="images/imgDefault.jpg" width="153" height="86" alt="Image Default" />
+                                                        <div class="btn blue btnUploadFile">
+                                                            <i class="fa fa-picture-o"></i>Upload hình
+                                                            <input type="file" name="upload">
+                                                        </div>
+                                                        <p>Hình đại diện sẽ tự động tạo sau khi video xử lý hoàn thành</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                                
+                                        </div><!--end formUpload -->
+                                    </div>
+                                    
+                                </div><!--end #basicUpload -->
+                                
+                                <div id="advanceUpload" class="tableData">
+                                    
+                                    <div class="rowForm">
+                                        <div class="formUpload clearfix">
+                                            <div class="col50p">
+                                                <div class="formGroup dropdown">
+                                                    <label>Thêm vào danh sách phát</label>
+                                                    <a href="#" class="btn cyan btnAddTo btnDropdown"><i class="fa fa-plus"></i>Thêm vào</a> 	
+                                                    <div class="dropdownDiv dropdownPlaylist"> 
+                                                        <div class="wPlaylists">
+                                                            <p class="notificationAddPL success">Đã thêm vào danh sách phát thành công</p>
+                                                            <!--<p class="notificationAddPL error">Đã thêm vào danh sách phát thành công</p>-->
+                                                            <ul class="playlists scrollable">
+                                                                <li><a href="#" class="rowGrey"><i class="fa fa-square"></i>Clip thú vị về công nghệ</a></li>
+                                                                <li><a href="#"><i class="fa fa-square"></i>Những tình khúc vược thời gian</a></li>
+                                                                <li class="addSuccess"><a href="#" class="rowGrey"><i class="fa fa-check-square"></i>Điểm lại các tin tức nổi bật 2014</a></li>
+                                                                <li><a href="#"><i class="fa fa-square"></i>Những tình khúc vược thời gian</a></li>
+                                                                <li><a href="#" class="rowGrey"><i class="fa fa-square"></i>Clip thú vị về công nghệ</a></li>
+                                                                <li><a href="#"><i class="fa fa-square"></i>Những tình khúc vược thời gian</a></li>
+                                                                <li class="addSuccess"><a href="#" class="rowGrey"><i class="fa fa-check-square"></i>Điểm lại các tin tức nổi bật 2014</a></li>
+                                                                <li><a href="#"><i class="fa fa-square"></i>Những tình khúc vược thời gian</a></li>
+                                                                <li><a href="#" class="rowGrey"><i class="fa fa-square"></i>Clip thú vị về công nghệ</a></li>
+                                                                <li><a href="#"><i class="fa fa-square"></i>Những tình khúc vược thời gian</a></li>
+                                                                <li class="addSuccess"><a href="#" class="rowGrey"><i class="fa fa-check-square"></i>Điểm lại các tin tức nổi bật 2014</a></li>
+                                                                <li><a href="#"><i class="fa fa-square"></i>Những tình khúc vược thời gian</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="createList">
+                                                            <label>Tạo danh sách phát</label>
+                                                            <input type="text" class="formGlobal" placeholder="Tên danh sách phát" />
+                                                            <button type="submit" class="btn btnPrimary"><i class="fa fa-plus"></i></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="formGroup">
+                                                    <label>Live URL</label>
+                                                    <div class="inputLink">
+                                                        <input type="text" class="formGlobal" placeholder="http://tinmoi.com/che-tao-my-nhan-2097.html" />
+                                                        <span class="icoLink"><i class="fa fa-link"></i></span>
+                                                    </div>
+                                                    <p class="note">Live URL là đường dẫn (link) đến trang web có nhúng video này</p>
+                                                </div>
+                                                <div class="formGroup">
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <input type="checkbox"> Tắt quảng cáo trên video này
+                                                        </label>
+                                                        <p class="note">Quảng cáo sẽ không được hiển thị trên những video được đánh dấu vào lựa chọn này</p>
+                                                    </div>
+                                                </div>
+                                                <div class="formGroup">
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <input type="checkbox"> Đồng bộ video này sang Channel Meme
+                                                        </label>
+                                                    </div>
+                                                    <p class="note">Muốn sử dụng chức năng này bạn cần liên kết tài khoản với một channel trên meme.vn <a href="#">Click vào đây để thực hiện</a></p>
+                                                </div>
+                                                <div class="formGroup">
+                                                    <label><i class="fa fa-clock-o"></i>Đăng video vào lúc</label>
+                                                    <div class="calendar">
+                                                        <span class="fa fa-calendar"></span>
+                                                        <input id="dp" class="formGlobal calendar" type="text" data-date-format="dd-mm-yyyy" value="01-11-2014">
+                                                    </div>
+                                                    <p class="note">Video sẽ được upload và xử lý trên hệ thống nhưng sẽ sẵn sáng phát vào thời điểm mà bạn chọn</p>
+                                                </div>
+                                                
+                                            </div>
+                                            <div class="col50p">
+                                                <div class="formGroup searchSuggest">
+                                                    <label>Video liên quan</label>
+                                                    <div class="searchRelate">
+                                                    	<div class="wSearchSuggest"></div>
+                                                        <input id="itemsVideo" type="text" class="formGlobal" placeholder="Tìm kiếm tên hoặc id video" />
+                                                        <input type="hidden" id="itemsVideo_id">
+                                                        <span class="fa fa-search"></span>
+                                                        <a href="#" class="btn btnDelRelate"><i class="fa fa-times"></i></a>
+                                                    </div>
+                                                    
+                                                    <ul id="sortable" class="autoSuggest scrollable">
+                                                        <li>
+                                                        	<span class="dragable"><i class="fa fa-arrows"></i></span>
+                                                            <a href="#">
+                                                                <img src="images/img1.jpg" />
+                                                                <p>
+                                                                    Trang web phát đọc quyền giải ngoại hạng Anh <br />
+                                                                    <span>Thể thao 247 - 25/12/2014</span>
+                                                                </p>
+                                                            </a>
+                                                            <a href="#" class="btn btnDelSuggest"><i class="fa fa-trash-o"></i></a>
+                                                        </li>
+                                                        <li>
+                                                        	<span class="dragable"><i class="fa fa-arrows"></i></span>
+                                                            <a href="#">
+                                                                <img src="images/img2.jpg" />
+                                                                <p>
+                                                                    Trang web phát đọc quyền giải ngoại hạng Anh <br />
+                                                                    <span>Thể thao 247 - 25/12/2014</span>
+                                                                </p>
+                                                            </a>
+                                                            <a href="#" class="btn btnDelSuggest"><i class="fa fa-trash-o"></i></a>
+                                                        </li>
+                                                        <li>
+                                                        	<span class="dragable"><i class="fa fa-arrows"></i></span>
+                                                            <a href="#">
+                                                                <img src="images/img3.jpg" />
+                                                                <p>
+                                                                    Trang web phát đọc quyền giải ngoại hạng Anh <br />
+                                                                    <span>Thể thao 247 - 25/12/2014</span>
+                                                                </p>
+                                                            </a>
+                                                            <a href="#" class="btn btnDelSuggest"><i class="fa fa-trash-o"></i></a>
+                                                        </li>
+                                                         <li>
+                                                         	<span class="dragable"><i class="fa fa-arrows"></i></span>
+                                                            <a href="#">
+                                                                <img src="images/img4.jpg" />
+                                                                <p>
+                                                                    Trang web phát đọc quyền giải ngoại hạng Anh <br />
+                                                                    <span>Thể thao 247 - 25/12/2014</span>
+                                                                </p>
+                                                            </a>
+                                                            <a href="#" class="btn btnDelSuggest"><i class="fa fa-trash-o"></i></a>
+                                                        </li>
+                                                        <li>
+                                                        	<span class="dragable"><i class="fa fa-arrows"></i></span>
+                                                            <a href="#">
+                                                                <img src="images/img1.jpg" />
+                                                                <p>
+                                                                    Trang web phát đọc quyền giải ngoại hạng Anh <br />
+                                                                    <span>Thể thao 247 - 25/12/2014</span>
+                                                                </p>
+                                                            </a>
+                                                            <a href="#" class="btn btnDelSuggest"><i class="fa fa-trash-o"></i></a>
+                                                        </li>
+                                                        <li>
+                                                        	<span class="dragable"><i class="fa fa-arrows"></i></span>
+                                                            <a href="#">
+                                                                <img src="images/img2.jpg" />
+                                                                <p>
+                                                                    Trang web phát đọc quyền giải ngoại hạng Anh <br />
+                                                                    <span>Thể thao 247 - 25/12/2014</span>
+                                                                </p>
+                                                            </a>
+                                                            <a href="#" class="btn btnDelSuggest"><i class="fa fa-trash-o"></i></a>
+                                                        </li>
+                                                        <li>
+                                                        	<span class="dragable"><i class="fa fa-arrows"></i></span>
+                                                            <a href="#">
+                                                                <img src="images/img3.jpg" />
+                                                                <p>
+                                                                    Trang web phát đọc quyền giải ngoại hạng Anh <br />
+                                                                    <span>Thể thao 247 - 25/12/2014</span>
+                                                                </p>
+                                                            </a>
+                                                            <a href="#" class="btn btnDelSuggest"><i class="fa fa-trash-o"></i></a>
+                                                        </li>
+                                                         <li>
+                                                         	<span class="dragable"><i class="fa fa-arrows"></i></span>
+                                                            <a href="#">
+                                                                <img src="images/img4.jpg" />
+                                                                <p>
+                                                                    Trang web phát đọc quyền giải ngoại hạng Anh <br />
+                                                                    <span>Thể thao 247 - 25/12/2014</span>
+                                                                </p>
+                                                            </a>
+                                                            <a href="#" class="btn btnDelSuggest"><i class="fa fa-trash-o"></i></a>
+                                                        </li>
+                                                    </ul><!--end autoSuggest -->
+                                                </div><!--end searchSuggest -->
+                                                
+                                            </div>
+                                        </div><!--end formUpload -->
+                                    </div>
+                                </div><!--end #advanceUpload -->
+                                
+                                <div class="actionForm clearfix">
+                                    <button type="submit" class="btn btnPrimary">Lưu thông tin</button>
+                                </div><!--end actionForm -->
+                                
+                            </div><!--end tabsContentGlobal -->
+                            
+                        </div><!--end tabsGlobal -->
+                        
+                        
+                        
+                    </div><!--end content -->
+                        
+                    
+                </div><!--end wrapperContent -->
+            
+            </div><!--end containerTable -->
+        
+        </div><!--end container -->
+        
+    </div><!--end wrapper -->
+    
+</body>
+
+</html>

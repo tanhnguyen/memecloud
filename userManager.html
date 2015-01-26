@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1200px" /> 
+    <title>User Manager | MeMe Cloud</title>
+    <!-- Global CSS -->
+    <link href="css/font-awesome.css" type="text/css" rel="stylesheet">
+    <link href="css/reset.css" type="text/css" rel="stylesheet">
+    <link href="css/global.css" type="text/css" rel="stylesheet">
+    <!-- End Global CSS -->
+    
+    <!-- Page CSS -->
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <!-- End Page CSS -->
+    
+    <!-- Global Script -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/placeholder.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
+    <script src="js/disableScrollBar.js"></script>
+    <script src="js/global.js"></script>
+    <!-- End Global Script -->
+    
+    <!-- Page Script -->
+    <script src="js/userManager.js"></script>
+    <!--End Page Script -->
+</head>
+
+<body>
+	
+    <div class="wrapper">
+    	
+        <div class="container">
+        
+            <div class="containerTable">
+            
+                <div class="sidebar">
+                    
+                    <div class="sidebarFixed">
+                        <div class="logo">
+                            <a href="#" title="Meme Cloud">Meme Cloud</a>
+                        </div>
+                        
+                        <div class="mainMenu">
+    
+                            <ul id="nav">
+                              <li><a href="#"><i class="fa fa-video-camera"></i>Video <span class="icoDown fa fa-chevron-down"></span></a>
+                                <ul>
+                                  <li><a href="allVideo.html">Tất cả video</a></li>
+                                  <li><a href="allVideoApprove.html">Duyệt video<span class="numMenu">20</span></a></li>
+                                  <li><a href="upload.html">Upload video mới</a></li>
+                                  <li><a href="uploadBulk.html">Upload cùng lúc</a></li>
+                                  <li><a href="allPlaylist.html">Danh sách phát</a></li>
+                                  <li><a href="categoryManager.html">Quản lý chuyên mục</a></li>
+                                  <li><a href="playerSetting.html">Cài đặt Player</a></li>
+                                </ul>
+                              </li>
+                              <li><a href="#"><i class="fa fa-bar-chart-o"></i>Thống kê<span class="icoDown fa fa-chevron-down"></span></a>
+                                <ul>
+                                  <li><a href="analytics.html">Tổng quan</a></li>
+                                  <li><a href="#">Theo người dùng</a></li>
+                                </ul>
+                              </li>
+                              <li><a href="userManager.html" class="active"><i class="fa fa-user"></i>Người dùng</a></li>
+                              <li><a href="#"><i class="fa fa-bullhorn"></i>Quảng cáo<span class="icoDown fa fa-chevron-down"></span></a>
+                                <ul>
+                                  <li><a href="domainManager.html">Quản lý trang web</a></li>
+                                  <li><a href="adMannagerGlobal.html">Quản lý Adtag</a></li>
+                                </ul>
+                              </li>
+                            </ul>
+                            
+                        </div>
+                    </div>
+                    
+                </div><!--end sidebar -->
+                
+                <div class="wrapperContent">
+                	
+                    <div class="header clearfix">
+                    	
+                        <div class="searchBox">
+                        	<button type="submit" class="btn btnSearch"><i class="fa fa-search"></i></button>
+                            <input class="formGlobal seachInput" placeholder="Nhập tên hoặc id video..." />
+                        </div>
+                        
+                        <div class="account">
+                        	<div class="userAcount dropdown">
+                            	<a href="#" class="channelName btnDropdown">Đời sống & pháp luật<i class="fa fa-caret-down"></i></a>
+                                <div class="dropdownDiv menuChannel">
+                                	<div class="swithChannel">Quản lý channel:</div>
+                                    <ul class="scrollable">
+                                        <li><a href="#">Tin Mới</a></li>
+                                        <li><a href="#">Thể Thao 24/7</a></li>
+                                        <li><a href="#">Người Đưa Tin</a></li>
+                                        <li><a href="#">Tin Mới</a></li>
+                                        <li><a href="#">Thể Thao 24/7</a></li>
+                                        <li><a href="#">Người Đưa Tin</a></li>
+                                        <li><a href="#">Tin Mới</a></li>
+                                        <li><a href="#">Thể Thao 24/7</a></li>
+                                        <li><a href="#">Người Đưa Tin</a></li>
+                                        <li><a href="#">Tin Mới</a></li>
+                                        <li><a href="#">Thể Thao 24/7</a></li>
+                                        <li><a href="#">Người Đưa Tin</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        	<div class="notification"><a href="upload.html" class="notificationIco"><i class="fa fa-cloud-upload"></i></a></div>
+                        	<div class="notification dropdown">
+                            	<a href="#" class="notificationIco btnDropdown"><i class="fa fa-bell"></i><span class="numNof">2</span></a>
+                                <div class="dropdownDiv boxNof">
+                                	<div class="headBoxNof">
+                                    	Bạn có 2 thông báo <a href="#" class="btnReadAsAll">Đã xem tất cả</a>
+                                    </div>
+                                    <ul class="listNof scrollable">
+                                    	<li>
+                                        	<a class="unread" href="activityVideo.html">Video <span class="boldNof">Muôn kiểu hành xử 'xấu' của người Việt khi gặp Cảnh sát giao thông</span> do <span class="boldNof">Phước Anh</span> upload đề nghị bạn duyệt <br /> <span class="timeNof">25 phút trước</span></a>
+                                            <a href="#" class="btnRead tooltipText" title="Đã xem"><i class="fa fa-circle-o"></i></a>
+                                        </li>
+                                        <li>
+                                        	<a href="#">Video <span class="boldNof">Ebola chính thức bị dập tắt</span> do <span class="boldNof">bạn</span> upload đã sẵn sàng sử dụng <br /> <span class="timeNof">2 phút trước</span></a>
+                                        </li>
+                                        <li>
+                                        	<a class="unread" href="activityVideo.html">Video <span class="boldNof">Muôn kiểu hành xử 'xấu' của người Việt khi gặp Cảnh sát giao thông</span> do <span class="boldNof">Phước Anh</span> upload đề nghị bạn duyệt <br /> <span class="timeNof">25 phút trước</span></a>
+                                            <a href="#" class="btnRead tooltipText" title="Đã xem"><i class="fa fa-circle-o"></i></a>
+                                        </li>
+                                        <li>
+                                        	<a href="#"><span class="boldNof">Bạn</span> đang có 4 video chờ duyệt <br /> <span class="timeNof">1 giờ trước</span></a>
+                                        </li>
+                                        <li>
+                                        	<a href="#">Video <span class="boldNof">Đua xe trái phép tại Bình Dương</span> của <span class="boldNof">Bạn</span> bị <span class="boldNof">Kevin Vu</span> từ chối <br /> <span class="timeNof">2 giờ trước</span></a>
+                                        </li>
+                                        <li>
+                                        	<a href="#">Video <span class="boldNof">Ebola chính thức bị dập tắt</span> do <span class="boldNof">bạn</span> upload đã sẵn sàng sử dụng <br /> <span class="timeNof">2 phút trước</span></a>
+                                        </li>
+                                        <li>
+                                        	<a href="#"><span class="boldNof">Bạn</span> đang có 4 video chờ duyệt <br /> <span class="timeNof">1 giờ trước</span></a>
+                                        </li>
+                                        <li>
+                                        	<a href="#">Video <span class="boldNof">Đua xe trái phép tại Bình Dương</span> của <span class="boldNof">Bạn</span> bị <span class="boldNof">Kevin Vu</span> từ chối <br /> <span class="timeNof">2 giờ trước</span></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="notification userAcount dropdown">
+                            	<a href="#" class="notificationIco userName btnDropdown"><i class="fa fa-cog"></i></a>
+                                <a href="#" class="userThumb"><img src="images/user.jpg" alt="Messi" /></a>
+                                <ul class="dropdownDiv menuAccount">
+                                	<li><a href="changeProfile.html"><i class="fa fa-edit"></i>Đổi thông tin tài khoản</a></li>
+                                    <!--<li><a href="#"><i class="fa fa-user"></i>Tình trạng tài khoản</a></li>-->
+                                    <li><a href="support.html"><i class="fa fa-envelope"></i>Hỗ trợ</a></li>
+                                    <li><a href="#"><i class="fa fa-sign-out"></i>Thoát</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                    </div><!--end header -->
+                    
+                    <div class="wrapperForScroll">
+                    
+                        <div class="content">
+                            
+                            <div class="boxContent">
+                                <ul class="breadcrumb clearfix">
+                                    <li><a href="#">Meme Cloud</a><i class="fa fa-angle-right"></i></li>
+                                    <li><a href="#">Người dùng</a><i class="fa fa-angle-right"></i></li>
+                                    <li class="active">
+                                        Danh sách người dùng
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div class="tabsGlobal">
+                        
+                                <ul class="tabs">
+                                    <li class="simple">Danh sách người dùng<i class="fa fa-circle"></i><span class="numTab">46</span></li>
+                                </ul>
+                                
+                                <div class="tabsContentGlobal">
+                                	
+                                    <div class="tableData current">
+                                    	<div class="fillterData clearfix">
+                                            <div class="selectived">
+                                                <button type="button" class="btn btnDefault"><i class="fa fa-trash-o"></i> Xóa</button>
+                                            </div>
+                                            <div class="advanceSearch">
+                                                <a href="#" class="btn orange" data-popup-target="#createUser"><i class="fa fa-user"></i>Thêm người dùng</a>
+                                            </div>
+                                            <div class="col10p searchFix">
+                                                <input type="text" class="formGlobal searchData" placeholder="Tìm kiếm theo tên, email, tên đăng nhập" />
+                                                <button type="submit" class="btn btnSearchData"><i class="fa fa-search"></i></button> 
+                                            </div>
+                                            
+                                            
+                                            <div class="col2p">
+                                                <select class="fillterSort formGlobal">
+                                                    <option>Sắp xếp</option>
+                                                    <option>Mới nhất</option>
+                                                    <option>Cũ nhất</option>
+                                                    <option>Xem nhiều nhất</option>
+                                                    <option>Xem ít nhất</option>
+                                                </select>
+                                            </div>
+                                            <div class="col2p">
+                                                <select class="fillterRecord formGlobal">
+                                                    <option>Số bản ghi</option>
+                                                    <option>10</option>
+                                                    <option>20</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="tableDataVideo">
+                                    
+                                            <div class="CSSTableGenerator" >
+                                                <table >
+                                                    <tr>
+                                                        <td width="30">
+                                                            <input id="checkAll1" type="checkbox" class="checkboxRow" />
+                                                        </td>
+                                                        <td>
+                                                            Tên
+                                                        </td>
+                                                        <td >
+                                                            Loại
+                                                        </td>
+                                                        <td>
+                                                            Trạng thái
+                                                        </td>
+                                                        <td >
+                                                            Ngày tạo
+                                                        </td>
+                                                        <td>
+                                                            Đăng nhập gần đây
+                                                        </td>
+                                                        <td>
+                                                        	Video
+                                                        </td>
+                                                        <td>
+                                                        	Lượt xem
+                                                        </td>
+                                                        <td width="281" class="fixWidthMD">
+                                                            Tác vụ
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <input type="checkbox" class="checkboxRow" />
+                                                        </td>
+                                                        <td>
+                                                            Kevin Vu <br />
+                                                            <a href="#" class="titleDataVideo">kevin@meme.vn</a>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            Admin
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <i class="fa fa-check-square statusDataSuccess tooltipText" title="Đang hoạt động"></i>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            21/12/2014
+                                                        </td>
+                                                        <td class="text-center">
+                                                            1/2/2015
+                                                        </td>
+                                                        <td class="text-center">
+                                                        	50
+                                                        </td>
+                                                        <td class="text-center">
+                                                        	1320
+                                                        </td>
+                                                        <td class="text-center">
+                                                        	<a href="#" class="btn btnDefault btnAction"><i class="fa fa-bar-chart-o"></i><span class="hiddenMD">Xem thống kê</span></a>
+                                                            <a href="#" class="btn btnDefault btnAction" data-popup-target="#editUser"><i class="fa fa-edit"></i><span class="hiddenMD">Sửa</span></a>
+                                                            <a href="#" class="btn btnDefault btnAction"><i class="fa fa-trash-o"></i><span class="hiddenMD">Xóa</span></a>
+                                                        </td>
+                                                    </tr><!-- end row data -->
+                                                    <tr>
+                                                        <td>
+                                                            <input type="checkbox" class="checkboxRow" />
+                                                        </td>
+                                                        <td>
+                                                            Trương nguyễn Phước Anh <br />
+                                                            <a href="#" class="titleDataVideo">daovietphuong@meme.vn</a>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            Quản lý nội dung
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <i class="fa fa-check-square statusDataSuccess tooltipText" title="Đang hoạt động"></i>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            21/12/2014
+                                                        </td>
+                                                        <td class="text-center">
+                                                            1/2/2015
+                                                        </td>
+                                                        <td class="text-center">
+                                                        	50
+                                                        </td>
+                                                        <td class="text-center">
+                                                        	1320
+                                                        </td>
+                                                        <td class="text-center">
+                                                        	<a href="#" class="btn btnDefault btnAction"><i class="fa fa-bar-chart-o"></i><span class="hiddenMD">Xem thống kê</span></a>
+                                                            <a href="#" class="btn btnDefault btnAction" data-popup-target="#editUser"><i class="fa fa-edit"></i><span class="hiddenMD">Sửa</span></a>
+                                                            <a href="#" class="btn btnDefault btnAction"><i class="fa fa-trash-o"></i><span class="hiddenMD">Xóa</span></a>
+                                                        </td>
+                                                    </tr><!-- end row data -->
+                                                    <tr>
+                                                        <td>
+                                                            <input type="checkbox" class="checkboxRow" />
+                                                        </td>
+                                                        <td>
+                                                            Đào Viết Phương <br />
+                                                            <a href="#" class="titleDataVideo">phuong.dao@meme.vn</a>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            Uploader
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <i class="fa  fa-minus-square statusDataProcess tooltipText" title="Đang bị chặn"></i>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            21/12/2014
+                                                        </td>
+                                                        <td class="text-center">
+                                                            1/2/2015
+                                                        </td>
+                                                        <td class="text-center">
+                                                        	50
+                                                        </td>
+                                                        <td class="text-center">
+                                                        	1320
+                                                        </td>
+                                                        <td class="text-center">
+                                                        	<a href="#" class="btn btnDefault btnAction"><i class="fa fa-bar-chart-o"></i><span class="hiddenMD">Xem thống kê</span></a>
+                                                            <a href="#" class="btn btnDefault btnAction" data-popup-target="#editUser"><i class="fa fa-edit"></i><span class="hiddenMD">Sửa</span></a>
+                                                            <a href="#" class="btn btnDefault btnAction"><i class="fa fa-trash-o"></i><span class="hiddenMD">Xóa</span></a>
+                                                        </td>
+                                                    </tr><!-- end row data -->
+                                                    <tr>
+                                                        <td>
+                                                            <input type="checkbox" class="checkboxRow" />
+                                                        </td>
+                                                        <td>
+                                                            Vũ Đức Mạnh <br />
+                                                            <a href="#" class="titleDataVideo">vuducmanh@meme.vn</a>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            Theo dõi viên
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <i class="fa fa-check-square statusDataSuccess tooltipText" title="Đang hoạt động"></i>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            21/12/2014
+                                                        </td>
+                                                        <td class="text-center">
+                                                            1/2/2015
+                                                        </td>
+                                                        <td class="text-center">
+                                                        	50
+                                                        </td>
+                                                        <td class="text-center">
+                                                        	1320
+                                                        </td>
+                                                        <td class="text-center">
+                                                        	<a href="#" class="btn btnDefault btnAction"><i class="fa fa-bar-chart-o"></i><span class="hiddenMD">Xem thống kê</span></a>
+                                                            <a href="#" class="btn btnDefault btnAction" data-popup-target="#editUser"><i class="fa fa-edit"></i><span class="hiddenMD">Sửa</span></a>
+                                                            <a href="#" class="btn btnDefault btnAction"><i class="fa fa-trash-o"></i><span class="hiddenMD">Xóa</span></a>
+                                                        </td>
+                                                    </tr><!-- end row data -->
+                                                  </table>
+                                         	</div><!-- end CSSTableGenerator -->
+                                      	</div>
+                                        
+                                    </div>
+                                    
+                                </div>
+                                
+                                <div class="paginationData clearfix">
+                                    <ul class="pagination">
+                                        <li><a href="#"><i class="fa fa-angle-double-left"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-angle-left"></i></a></li>
+                                        <li><a href="#">1</a></li>
+                                        <li><a href="#" class="active">2</a></li>
+                                        <li><a href="#">3</a></li>
+                                        <li><a href="#">4</a></li>
+                                        <li><a href="#">5</a></li>
+                                        <li><a href="#"><i class="fa fa-angle-right"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-angle-double-right"></i></a></li>
+                                    </ul>
+                                    <p>Hiển thị 10 trong tổng 1500 bản ghi</p>
+                                </div>
+                                
+                            
+                            </div><!--end tabsGlobal -->
+                            
+                            
+                            
+                        </div><!--end content -->
+                        
+                    </div><!--end wrapperForScroll -->
+                    
+                </div><!--end wrapperContent -->
+            
+            </div><!--end containerTable -->
+        
+        </div><!--end container -->
+        
+    </div><!--end wrapper -->
+    <div class="popupWrapper">
+    
+        <div id="createUser" style="width:750px;" class="popup">
+            <div class="popup-body">
+                <div class="popupHead">
+                    <h3>Tạo người dùng mới</h3>
+                    <span class="popup-exit"><i class="fa fa-times"></i></span>
+                </div>
+                <div class="popupContent pb0 clearfix">
+                    <div class="popupContentBox clearfix">
+                        <div class="formGroup inline clearfix">
+                            <label>Họ tên:</label>
+                            <input type="text" class="formGlobal" />
+                        </div>
+                        <div class="formGroup inline clearfix">
+                            <label>Địa chỉ email:</label>
+                            <input type="text" class="formGlobal" />
+                        </div>
+                        <div class="formGroup inline clearfix">
+                            <label>Mật khẩu:</label>
+                            <input type="password" class="formGlobal" />
+                        </div>
+                        <div class="formGroup inline clearfix">
+                            <label>Xác nhận mật khẩu:</label>
+                            <input type="password" class="formGlobal" />
+                        </div>
+                        <div class="formGroup inline clearfix">
+                            <label class="labelPermission">Quyền:</label>
+                            <div class="boxPermission scrollable clearfix">
+                                <div class="listPermission">
+                                    <h3>Xem video</h3>
+                                    <ul>
+                                        <li><label><input type="radio" name="radio10" checked /> Không có quyền</label></li>
+                                        <li><label><input type="radio" name="radio10" /> Xem được video của mình </label></li>
+                                        <li><label><input type="radio" name="radio10" /> Xem được tất cả video</label></li>
+                                    </ul>
+                                    <h3>Thêm video mới</h3>
+                                    <ul>
+                                        <li><label><input type="radio" name="radio11" checked /> Không có quyền</label></li>
+                                        <li><label><input type="radio" name="radio11" /> Có quyền thêm</label></li>
+                                        <li><label><input type="radio" name="radio11" /> Video mới tự động được duyệt</label></li>
+                                    </ul>
+                                    <h3>Sửa video</h3>
+                                    <ul>
+                                        <li><label><input type="radio" name="radio12" checked /> Không có quyền</label></li>
+                                        <li><label><input type="radio" name="radio12" /> Sửa video của mình </label></li>
+                                        <li><label><input type="radio" name="radio12" /> Được sửa video của mình sau khi video đó đã được duyệt</label></li>
+                                        <li><label><input type="radio" name="radio12" /> Sửa tất cả video, kể cả khi video đã được duyệt</label></li>
+                                    </ul>
+                                     <h3>Cài đặt player</h3>
+                                    <ul>
+                                        <li><label><input type="radio" name="radio13" checked /> Không có quyền</label></li>
+                                        <li><label><input type="radio" name="radio13" /> Được cài đặt player </label></li>
+                                    </ul>
+                                    <h3>Quản lý quảng cáo</h3>
+                                    <ul>
+                                        <li><label><input type="radio" name="radio14" checked /> Không có quyền</label></li>
+                                        <li><label><input type="radio" name="radio14" /> Được quản lý quảng cáo </label></li>
+                                    </ul>
+                                </div>
+                                <div class="listPermission">
+                                    <h3>Xóa video</h3>
+                                    <ul>
+                                        <li><label><input type="radio" name="radio15" checked /> Không có quyền</label></li>
+                                        <li><label><input type="radio" name="radio15" /> Xóa video của mình </label></li>
+                                        <li><label><input type="radio" name="radio15" /> Xóa video của người khác</label></li>
+                                    </ul>
+                                    <h3>Duyệt video</h3>
+                                    <ul>
+                                        <li><label><input type="radio" name="radio16" checked /> Không có quyền</label></li>
+                                        <li><label><input type="radio" name="radio16" /> Được duyệt tất cả video</label></li>
+                                    </ul>
+                                    <h3>Xem thống kê</h3>
+                                    <ul>
+                                        <li><label><input type="radio" name="radio17" checked /> Không có quyền</label></li>
+                                        <li><label><input type="radio" name="radio17" /> Xem thống kê video của mình</label></li>
+                                        <li><label><input type="radio" name="radio17" /> Xem tất cả thống kê</label></li>
+                                    </ul>
+                                    <h3>Quản lý chuyên mục</h3>
+                                    <ul>
+                                        <li><label><input type="radio" name="radio18" checked /> Không có quyền</label></li>
+                                        <li><label><input type="radio" name="radio18" /> Được quyền thêm/sửa </label></li>
+                                        <li><label><input type="radio" name="radio18" /> Được quyền xóa </label></li>
+                                    </ul>
+                                    <h3>Quản lý người dùng</h3>
+                                    <ul>
+                                        <li><label><input type="radio" name="radio19" checked /> Không có quyền</label></li>
+                                        <li><label><input type="radio" name="radio19" /> Được quyền thêm/sửa/phân quyền người dùng </label></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="formGroup">
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"> Gửi thông tin tài khoản qua email cho người dùng
+                                </label>
+                            </div>
+                        
+                        </div><!--end formGroup -->
+                        <div class="actionForm">
+                            <button type="submit" class="btn btnPrimary">Tạo người dùng</button>
+                            <button type="button" class="btn btnDefault">Hủy</button>
+                        </div>
+                    </div><!--end popupContentBox -->
+                </div>
+            </div>
+        </div><!--end #createUser -->
+        <div id="editUser" style="width:750px;" class="popup">
+            <div class="popup-body">
+                <div class="popupHead">
+                    <h3>Chỉnh sửa người dùng</h3>
+                    <span class="popup-exit"><i class="fa fa-times"></i></span>
+                </div>
+                <div class="popupContent clearfix pb0">
+                    <div class="popupContentBox clearfix mb10">
+                        <div class="formGroup inline clearfix">
+                            <label>Họ tên:</label>
+                            <input type="text" placeholder="Kevin Vu" class="formGlobal" />
+                        </div>
+                        <div class="formGroup inline clearfix">
+                            <label>Địa chỉ email:</label>
+                            <input type="text" placeholder="kevinvu@meme.vn" class="formGlobal" />
+                        </div>
+                        <div class="formGroup inline clearfix">
+                            <label class="labelPermission">Quyền:</label>
+                            <div class="boxPermission scrollable clearfix">
+                                <div class="listPermission">
+                                    <h3>Xem video</h3>
+                                    <ul>
+                                        <li><label><input type="radio" name="radio9" checked /> Không có quyền</label></li>
+                                        <li><label><input type="radio" name="radio9" /> Xem được video của mình </label></li>
+                                        <li><label><input type="radio" name="radio9" /> Xem được tất cả video</label></li>
+                                    </ul>
+                                    <h3>Thêm video mới</h3>
+                                    <ul>
+                                        <li><label><input type="radio" name="radio1" checked /> Không có quyền</label></li>
+                                        <li><label><input type="radio" name="radio1" /> Có quyền thêm</label></li>
+                                        <li><label><input type="radio" name="radio1" /> Video mới tự động được duyệt</label></li>
+                                    </ul>
+                                    <h3>Sửa video</h3>
+                                    <ul>
+                                        <li><label><input type="radio" name="radio2" checked /> Không có quyền</label></li>
+                                        <li><label><input type="radio" name="radio2" /> Sửa video của mình </label></li>
+                                        <li><label><input type="radio" name="radio2" /> Được sửa video của mình sau khi video đó đã được duyệt</label></li>
+                                        <li><label><input type="radio" name="radio2" /> Sửa tất cả video, kể cả khi video đã được duyệt</label></li>
+                                    </ul>
+                                     <h3>Cài đặt player</h3>
+                                    <ul>
+                                        <li><label><input type="radio" name="radio3" checked /> Không có quyền</label></li>
+                                        <li><label><input type="radio" name="radio3" /> Được cài đặt player </label></li>
+                                    </ul>
+                                    <h3>Quản lý quảng cáo</h3>
+                                    <ul>
+                                        <li><label><input type="radio" name="radio4" checked /> Không có quyền</label></li>
+                                        <li><label><input type="radio" name="radio4" /> Được quản lý quảng cáo </label></li>
+                                    </ul>
+                                </div>
+                                <div class="listPermission">
+                                    <h3>Xóa video</h3>
+                                    <ul>
+                                        <li><label><input type="radio" name="radio5" checked /> Không có quyền</label></li>
+                                        <li><label><input type="radio" name="radio5" /> Xóa video của mình </label></li>
+                                        <li><label><input type="radio" name="radio5" /> Xóa video của người khác</label></li>
+                                    </ul>
+                                    <h3>Duyệt video</h3>
+                                    <ul>
+                                        <li><label><input type="radio" name="radio" checked /> Không có quyền</label></li>
+                                        <li><label><input type="radio" name="radio" /> Được duyệt tất cả video</label></li>
+                                    </ul>
+                                    <h3>Xem thống kê</h3>
+                                    <ul>
+                                        <li><label><input type="radio" name="radio6" checked /> Không có quyền</label></li>
+                                        <li><label><input type="radio" name="radio6" /> Xem thống kê video của mình</label></li>
+                                        <li><label><input type="radio" name="radio6" /> Xem tất cả thống kê</label></li>
+                                    </ul>
+                                    <h3>Quản lý chuyên mục</h3>
+                                    <ul>
+                                        <li><label><input type="radio" name="radio7" checked /> Không có quyền</label></li>
+                                        <li><label><input type="radio" name="radio7" /> Được quyền thêm/sửa </label></li>
+                                        <li><label><input type="radio" name="radio7" /> Được quyền xóa </label></li>
+                                    </ul>
+                                    <h3>Quản lý người dùng</h3>
+                                    <ul>
+                                        <li><label><input type="radio" name="radio8" checked /> Không có quyền</label></li>
+                                        <li><label><input type="radio" name="radio8" /> Được quyền thêm/sửa/phân quyền người dùng </label></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="formGroup">
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"> Gửi thông tin tài khoản qua email cho người dùng
+                                </label>
+                            </div>
+                        
+                        </div><!--end formGroup -->
+                        <div class="actionForm mlr-20 pb0 clearfix">
+                            <button type="submit" class="btn btnPrimary">Lưu thông tin</button>
+                            <button type="button" class="btn btnDefault">Hủy</button>
+                        </div>
+                    </div><!--end popupContentBox -->
+                    
+                    <div class="popupContentBox clearfix">
+                        <div class="formGroup inline rmb clearfix">
+                            <label>Thay đổi mật khẩu:</label>
+                            <input type="password" placeholder="Mật khẩu mới" class="formGlobal halfInput" />
+                            <input type="password" placeholder="Xác nhận mật khẩu mới" class="formGlobal halfInput" />
+                            <button type="submit" class="btn btnPrimary">Lưu thay đổi</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!--end #editUser -->
+        <div class="popup-overlay"></div>
+    
+    </div><!-- end popupWrapper -->
+    
+</body>
+
+</html>

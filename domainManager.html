@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1200px" /> 
+    <title>Domain Manager | MeMe Cloud</title>
+    <!-- Global CSS -->
+    <link href="css/font-awesome.css" type="text/css" rel="stylesheet">
+    <link href="css/reset.css" type="text/css" rel="stylesheet">
+    <link href="css/global.css" type="text/css" rel="stylesheet">
+    <!-- End Global CSS -->
+    
+    <!-- Page CSS -->
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <!-- End Page CSS -->
+    
+    <!-- Global Script -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/placeholder.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
+    <script src="js/disableScrollBar.js"></script>
+    <script src="js/global.js"></script>
+    <!-- End Global Script -->
+    
+    <!-- Page Script -->
+    <script src="js/categoryManager.js"></script>
+    <!--End Page Script -->
+</head>
+
+<body>
+	
+    <div class="wrapper">
+    	
+        <div class="container">
+        
+            <div class="containerTable">
+            
+                <div class="sidebar">
+                    
+                    <div class="sidebarFixed">
+                        <div class="logo">
+                            <a href="#" title="Meme Cloud">Meme Cloud</a>
+                        </div>
+                        
+                        <div class="mainMenu">
+    
+                            <ul id="nav">
+                              <li><a href="#"><i class="fa fa-video-camera"></i>Video <span class="icoDown fa fa-chevron-down"></span></a>
+                                <ul>
+                                  <li><a href="allVideo.html">Tất cả video</a></li>
+                                  <li><a href="allVideoApprove.html">Duyệt video<span class="numMenu">20</span></a></li>
+                                  <li><a href="upload.html">Upload video mới</a></li>
+                                  <li><a href="uploadBulk.html">Upload cùng lúc</a></li>
+                                  <li><a href="allPlaylist.html">Danh sách phát</a></li>
+                                  <li><a href="categoryManager.html">Quản lý chuyên mục</a></li>
+                                  <li><a href="playerSetting.html">Cài đặt Player</a></li>
+                                </ul>
+                              </li>
+                              <li><a href="#"><i class="fa fa-bar-chart-o"></i>Thống kê<span class="icoDown fa fa-chevron-down"></span></a>
+                                <ul>
+                                  <li><a href="analytics.html">Tổng quan</a></li>
+                                  <li><a href="#">Theo người dùng</a></li>
+                                </ul>
+                              </li>
+                              <li><a href="userManager.html"><i class="fa fa-user"></i>Người dùng</a>
+                              </li>
+                              <li><a href="#" class="active"><i class="fa fa-bullhorn"></i>Quảng cáo<span class="icoDown fa fa-chevron-down"></span></a>
+                                <ul>
+                                  <li><a href="domainManager.html" class="selected">Quản lý trang web</a></li>
+                                  <li><a href="adMannagerGlobal.html">Quản lý Adtag</a></li>
+                                </ul>
+                              </li>
+                            </ul>
+                            
+                        </div>
+                    </div>
+                    
+                </div><!--end sidebar -->
+                
+                <div class="wrapperContent">
+                	
+                    <div class="header clearfix">
+                    	
+                        <div class="searchBox">
+                        	<button type="submit" class="btn btnSearch"><i class="fa fa-search"></i></button>
+                            <input class="formGlobal seachInput" placeholder="Nhập tên hoặc id video..." />
+                        </div>
+                        
+                        <div class="account">
+                        	<div class="userAcount dropdown">
+                            	<a href="#" class="channelName btnDropdown">Đời sống & pháp luật<i class="fa fa-caret-down"></i></a>
+                                <div class="dropdownDiv menuChannel">
+                                	<div class="swithChannel">Quản lý channel:</div>
+                                    <ul class="scrollable">
+                                        <li><a href="#">Tin Mới</a></li>
+                                        <li><a href="#">Thể Thao 24/7</a></li>
+                                        <li><a href="#">Người Đưa Tin</a></li>
+                                        <li><a href="#">Tin Mới</a></li>
+                                        <li><a href="#">Thể Thao 24/7</a></li>
+                                        <li><a href="#">Người Đưa Tin</a></li>
+                                        <li><a href="#">Tin Mới</a></li>
+                                        <li><a href="#">Thể Thao 24/7</a></li>
+                                        <li><a href="#">Người Đưa Tin</a></li>
+                                        <li><a href="#">Tin Mới</a></li>
+                                        <li><a href="#">Thể Thao 24/7</a></li>
+                                        <li><a href="#">Người Đưa Tin</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        	<div class="notification"><a href="upload.html" class="notificationIco"><i class="fa fa-cloud-upload"></i></a></div>
+                        	<div class="notification dropdown">
+                            	<a href="#" class="notificationIco btnDropdown"><i class="fa fa-bell"></i><span class="numNof">2</span></a>
+                                <div class="dropdownDiv boxNof">
+                                	<div class="headBoxNof">
+                                    	Bạn có 2 thông báo <a href="#" class="btnReadAsAll">Đã xem tất cả</a>
+                                    </div>
+                                    <ul class="listNof scrollable">
+                                    	<li>
+                                        	<a class="unread" href="activityVideo.html">Video <span class="boldNof">Muôn kiểu hành xử 'xấu' của người Việt khi gặp Cảnh sát giao thông</span> do <span class="boldNof">Phước Anh</span> upload đề nghị bạn duyệt <br /> <span class="timeNof">25 phút trước</span></a>
+                                            <a href="#" class="btnRead tooltipText" title="Đã xem"><i class="fa fa-circle-o"></i></a>
+                                        </li>
+                                        <li>
+                                        	<a href="#">Video <span class="boldNof">Ebola chính thức bị dập tắt</span> do <span class="boldNof">bạn</span> upload đã sẵn sàng sử dụng <br /> <span class="timeNof">2 phút trước</span></a>
+                                        </li>
+                                        <li>
+                                        	<a class="unread" href="activityVideo.html">Video <span class="boldNof">Muôn kiểu hành xử 'xấu' của người Việt khi gặp Cảnh sát giao thông</span> do <span class="boldNof">Phước Anh</span> upload đề nghị bạn duyệt <br /> <span class="timeNof">25 phút trước</span></a>
+                                            <a href="#" class="btnRead tooltipText" title="Đã xem"><i class="fa fa-circle-o"></i></a>
+                                        </li>
+                                        <li>
+                                        	<a href="#"><span class="boldNof">Bạn</span> đang có 4 video chờ duyệt <br /> <span class="timeNof">1 giờ trước</span></a>
+                                        </li>
+                                        <li>
+                                        	<a href="#">Video <span class="boldNof">Đua xe trái phép tại Bình Dương</span> của <span class="boldNof">Bạn</span> bị <span class="boldNof">Kevin Vu</span> từ chối <br /> <span class="timeNof">2 giờ trước</span></a>
+                                        </li>
+                                        <li>
+                                        	<a href="#">Video <span class="boldNof">Ebola chính thức bị dập tắt</span> do <span class="boldNof">bạn</span> upload đã sẵn sàng sử dụng <br /> <span class="timeNof">2 phút trước</span></a>
+                                        </li>
+                                        <li>
+                                        	<a href="#"><span class="boldNof">Bạn</span> đang có 4 video chờ duyệt <br /> <span class="timeNof">1 giờ trước</span></a>
+                                        </li>
+                                        <li>
+                                        	<a href="#">Video <span class="boldNof">Đua xe trái phép tại Bình Dương</span> của <span class="boldNof">Bạn</span> bị <span class="boldNof">Kevin Vu</span> từ chối <br /> <span class="timeNof">2 giờ trước</span></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="notification userAcount dropdown">
+                            	<a href="#" class="notificationIco userName btnDropdown"><i class="fa fa-cog"></i></a>
+                                <a href="#" class="userThumb"><img src="images/user.jpg" alt="Messi" /></a>
+                                <ul class="dropdownDiv menuAccount">
+                                	<li><a href="changeProfile.html"><i class="fa fa-edit"></i>Đổi thông tin tài khoản</a></li>
+                                    <!--<li><a href="#"><i class="fa fa-user"></i>Tình trạng tài khoản</a></li>-->
+                                    <li><a href="support.html"><i class="fa fa-envelope"></i>Hỗ trợ</a></li>
+                                    <li><a href="#"><i class="fa fa-sign-out"></i>Thoát</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                    </div><!--end header -->
+                    
+                    <div class="wrapperForScroll">
+                    
+                        <div class="content">
+                            
+                            <div class="boxContent">
+                                <ul class="breadcrumb clearfix">
+                                    <li><a href="#">Meme Cloud</a><i class="fa fa-angle-right"></i></li>
+                                    <li><a href="#">Quảng cáo</a><i class="fa fa-angle-right"></i></li>
+                                    <li class="active">
+                                        Quản lý trang web
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div class="tabsGlobal">
+                        
+                                <ul class="tabs">
+                                    <li class="simple">Tất cả website<i class="fa fa-circle"></i><span class="numTab">26</span></li>
+                                </ul>
+                                
+                                <div class="tabsContentGlobal">
+                                	
+                                    <div class="tableData current">
+                                    	<div class="fillterData clearfix">
+                                            <div class="selectived">
+                                                <button type="button" class="btn btnDefault"><i class="fa fa-trash-o"></i>Xóa</button>
+                                            </div>
+                                            <div class="advanceSearch">
+                                                <a href="#" class="btn orange" data-popup-target="#createDomain"><i class="fa fa-globe"></i>Thêm website</a>
+                                            </div>
+                                            <div class="col10p searchFix">
+                                                <input type="text" class="formGlobal searchData" placeholder="Tìm kiếm website" />
+                                                <button type="submit" class="btn btnSearchData"><i class="fa fa-search"></i></button> 
+                                            </div>
+                                            
+                                            
+                                            <div class="col2p">
+                                                <select class="fillterSort formGlobal">
+                                                    <option>Sắp xếp</option>
+                                                    <option>Mới nhất</option>
+                                                    <option>Cũ nhất</option>
+                                                    <option>Xem nhiều nhất</option>
+                                                    <option>Xem ít nhất</option>
+                                                </select>
+                                            </div>
+                                            <div class="col2p">
+                                                <select class="fillterRecord formGlobal">
+                                                    <option>Số bản ghi</option>
+                                                    <option>10</option>
+                                                    <option>20</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="tableDataVideo">
+                                    
+                                            <div class="CSSTableGenerator" >
+                                                <table >
+                                                    <tr>
+                                                        <td width="30">
+                                                            <input id="checkAll1" type="checkbox" class="checkboxRow" />
+                                                        </td>
+                                                        <td style="text-align:left;">
+                                                            Tên Website
+                                                        </td>
+                                                        <td style="text-align:left;">
+                                                            URL
+                                                        </td>
+                                                        <td >
+                                                            Trạng thái
+                                                        </td>
+                                                        <td>
+                                                            Thể loại
+                                                        </td>
+                                                        <td width="155" class="fixWidthMD">
+                                                            Tác vụ
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <input type="checkbox" class="checkboxRow" />
+                                                        </td>
+                                                        <td>
+                                                            Tin mới
+                                                        </td>
+                                                        <td>
+                                                            <a href="#">http://tinmoi.vn</a>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <i class="fa fa-check statusDataSuccess tooltipText" title="Đã duyệt"></i>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <select class="formGlobal">
+                                                            	<option>Tin tức</option>
+                                                                <option>Thể thao</option>
+                                                                <option>Giải trí</option>
+                                                            </select>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <a href="#" class="btn btnDefault btnAction" data-popup-target="#editDomain"><i class="fa fa-edit"></i><span class="hiddenMD">Sửa</span></a>
+                                                            <a href="#" class="btn btnDefault btnAction"><i class="fa fa-trash-o"></i><span class="hiddenMD">Xóa</span></a>
+                                                        </td>
+                                                    </tr><!-- end row data -->
+                                                    <tr>
+                                                        <td>
+                                                            <input type="checkbox" class="checkboxRow" />
+                                                        </td>
+                                                        <td>
+                                                            Báo người đưa tin
+                                                        </td>
+                                                        <td>
+                                                            <a href="#">http://nguoiduatin.vn</a>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <i class="fa fa-spinner statusDataProcess tooltipText" title="Chờ duyệt"></i>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <select class="formGlobal">
+                                                            	<option>Tin tức</option>
+                                                                <option>Thể thao</option>
+                                                                <option>Giải trí</option>
+                                                            </select>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <a href="#" class="btn btnDefault btnAction" data-popup-target="#editDomain"><i class="fa fa-edit"></i><span class="hiddenMD">Sửa</span></a>
+                                                            <a href="#" class="btn btnDefault btnAction"><i class="fa fa-trash-o"></i><span class="hiddenMD">Xóa</span></a>
+                                                        </td>
+                                                    </tr><!-- end row data -->
+                                                    <tr>
+                                                        <td>
+                                                            <input type="checkbox" class="checkboxRow" />
+                                                        </td>
+                                                        <td>
+                                                            Thể thao 247
+                                                        </td>
+                                                        <td>
+                                                            <a href="#">http://nguoiduatin.vn</a>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <i class="fa fa-spinner statusDataProcess tooltipText" title="Chờ duyệt"></i>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <select class="formGlobal">
+                                                            	<option>Thể thao</option>
+                                                                <option>Tin tức</option>
+                                                                <option>Giải trí</option>
+                                                            </select>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <a href="#" class="btn btnDefault btnAction" data-popup-target="#editDomain"><i class="fa fa-edit"></i><span class="hiddenMD">Sửa</span></a>
+                                                            <a href="#" class="btn btnDefault btnAction"><i class="fa fa-trash-o"></i><span class="hiddenMD">Xóa</span></a>
+                                                        </td>
+                                                    </tr><!-- end row data -->
+                                                    <tr>
+                                                        <td>
+                                                            <input type="checkbox" class="checkboxRow" />
+                                                        </td>
+                                                        <td>
+                                                            Tin mới
+                                                        </td>
+                                                        <td>
+                                                            <a href="#">http://tinmoi.vn</a>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <i class="fa fa-check statusDataSuccess tooltipText" title="Đã duyệt"></i>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <select class="formGlobal">
+                                                            	<option>Tin tức</option>
+                                                                <option>Thể thao</option>
+                                                                <option>Giải trí</option>
+                                                            </select>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <a href="#" class="btn btnDefault btnAction" data-popup-target="#editDomain"><i class="fa fa-edit"></i><span class="hiddenMD">Sửa</span></a>
+                                                            <a href="#" class="btn btnDefault btnAction"><i class="fa fa-trash-o"></i><span class="hiddenMD">Xóa</span></a>
+                                                        </td>
+                                                    </tr><!-- end row data -->
+                                                    <tr>
+                                                        <td>
+                                                            <input type="checkbox" class="checkboxRow" />
+                                                        </td>
+                                                        <td>
+                                                            Báo người đưa tin
+                                                        </td>
+                                                        <td>
+                                                            <a href="#">http://nguoiduatin.vn</a>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <i class="fa fa-spinner statusDataProcess tooltipText" title="Chờ duyệt"></i>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <select class="formGlobal">
+                                                            	<option>Tin tức</option>
+                                                                <option>Thể thao</option>
+                                                                <option>Giải trí</option>
+                                                            </select>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <a href="#" class="btn btnDefault btnAction" data-popup-target="#editDomain"><i class="fa fa-edit"></i><span class="hiddenMD">Sửa</span></a>
+                                                            <a href="#" class="btn btnDefault btnAction"><i class="fa fa-trash-o"></i><span class="hiddenMD">Xóa</span></a>
+                                                        </td>
+                                                    </tr><!-- end row data -->
+                                                    <tr>
+                                                        <td>
+                                                            <input type="checkbox" class="checkboxRow" />
+                                                        </td>
+                                                        <td>
+                                                            Thể thao 247
+                                                        </td>
+                                                        <td>
+                                                            <a href="#">http://nguoiduatin.vn</a>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <i class="fa fa-spinner statusDataProcess tooltipText" title="Chờ duyệt"></i>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <select class="formGlobal">
+                                                            	<option>Thể thao</option>
+                                                                <option>Tin tức</option>
+                                                                <option>Giải trí</option>
+                                                            </select>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <a href="#" class="btn btnDefault btnAction" data-popup-target="#editDomain"><i class="fa fa-edit"></i><span class="hiddenMD">Sửa</span></a>
+                                                            <a href="#" class="btn btnDefault btnAction"><i class="fa fa-trash-o"></i><span class="hiddenMD">Xóa</span></a>
+                                                        </td>
+                                                    </tr><!-- end row data -->
+                                                  </table>
+                                         	</div><!-- end CSSTableGenerator -->
+                                      	</div>
+                                        
+                                    </div>
+                                    
+                                </div>
+                                
+                                <div class="paginationData clearfix">
+                                    <ul class="pagination">
+                                        <li><a href="#"><i class="fa fa-angle-double-left"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-angle-left"></i></a></li>
+                                        <li><a href="#">1</a></li>
+                                        <li><a href="#" class="active">2</a></li>
+                                        <li><a href="#">3</a></li>
+                                        <li><a href="#">4</a></li>
+                                        <li><a href="#">5</a></li>
+                                        <li><a href="#"><i class="fa fa-angle-right"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-angle-double-right"></i></a></li>
+                                    </ul>
+                                    <p>Hiển thị 10 trong tổng 1500 bản ghi</p>
+                                </div>
+                                
+                            
+                            </div><!--end tabsGlobal -->
+                            
+                            
+                            
+                        </div><!--end content -->
+                        
+                    </div><!--end wrapperForScroll -->
+                    
+                </div><!--end wrapperContent -->
+            
+            </div><!--end containerTable -->
+        
+        </div><!--end container -->
+        
+    </div><!--end wrapper -->
+    
+    <div class="popupWrapper">
+    
+        <div id="createDomain" style="width:500px;" class="popup">
+            <div class="popup-body">
+                <div class="popupHead">
+                    <h3>Tạo website</h3>
+                    <span class="popup-exit"><i class="fa fa-times"></i></span>
+                </div>
+                <div class="popupContent clearfix">
+                    <div class="popupContentBox clearfix">
+                        <div class="formGroup inline clearfix">
+                            <label>Tên Website:</label>
+                            <input type="text" class="formGlobal" />
+                        </div>
+                        <div class="formGroup inline clearfix">
+                            <label>URL:</label>
+                            <input type="text" class="formGlobal" />
+                        </div>
+                        <div class="formGroup inline clearfix">
+                            <label>Thể loại:</label>
+                            <select class="formGlobal">
+                                <option>Thể thao</option>
+                                <option>Tin tức</option>
+                                <option>Giải trí</option>
+                            </select>
+                        </div>
+                        <div class="actionForm">
+                            <button type="submit" class="btn btnPrimary">Tạo website</button>
+                            <button type="button" class="btn btnDefault">Hủy</button>
+                        </div>
+                    </div><!--end popupContentBox -->
+                </div>
+            </div>
+        </div><!--end #createUser -->
+        <div id="editDomain" style="width:500px;" class="popup">
+            <div class="popup-body">
+                <div class="popupHead">
+                    <h3>Chỉnh sửa chuyên mục</h3>
+                    <span class="popup-exit"><i class="fa fa-times"></i></span>
+                </div>
+                <div class="popupContent clearfix">
+                    <div class="popupContentBox clearfix">
+                        <div class="formGroup inline clearfix">
+                            <label>Tên Website:</label>
+                            <input type="text" class="formGlobal" placeholder="Tin mới" />
+                        </div>
+                        <div class="formGroup inline clearfix">
+                            <label>URL:</label>
+                            <input type="text" class="formGlobal" placeholder="http://thethao247.vn" />
+                        </div>
+                        <div class="formGroup inline clearfix">
+                            <label>Thể loại:</label>
+                            <select class="formGlobal">
+                                <option>Thể thao</option>
+                                <option>Tin tức</option>
+                                <option>Giải trí</option>
+                            </select>
+                        </div>
+                        <div class="actionForm">
+                            <button type="submit" class="btn btnPrimary">Lưu thông tin</button>
+                            <button type="button" class="btn btnDefault">Hủy</button>
+                        </div>
+                    </div><!--end popupContentBox -->
+                </div>
+            </div>
+        </div><!--end #editUser -->
+        <div class="popup-overlay"></div>
+    
+    </div><!-- end popupWrapper -->
+    
+</body>
+
+</html>

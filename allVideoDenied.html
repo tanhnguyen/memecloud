@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1200px" /> 
+    <title>All Video | MeMe Cloud</title>
+    <!-- Global CSS -->
+    <link href="css/font-awesome.css" type="text/css" rel="stylesheet">
+    <link href="css/reset.css" type="text/css" rel="stylesheet">
+    <link href="css/global.css" type="text/css" rel="stylesheet">
+    <!-- End Global CSS -->
+    
+    <!-- Page CSS -->
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <link href="css/cropper.css" type="text/css" rel="stylesheet">
+    <!-- End Page CSS -->
+    
+    <!-- Global Script -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/placeholder.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
+    <script src="js/disableScrollBar.js"></script>
+    <script src="js/global.js"></script>
+    <!-- End Global Script -->
+    
+    <!-- Page Script -->
+    
+    <script src="js/cropImage/cropper.js"></script>
+    <script src="js/cropImage/docs.js"></script>
+	<script src="js/video.js"></script>
+    <!--End Page Script -->
+</head>
+
+<body>
+	
+    <div class="wrapper">
+    	
+        <div class="container">
+        
+            <div class="containerTable">
+            
+                <div class="sidebar">
+                    
+                    <div class="sidebarFixed">
+                        <div class="logo">
+                            <a href="#" title="Meme Cloud">Meme Cloud</a>
+                        </div>
+                        
+                        <div class="mainMenu">
+    
+                            <ul id="nav">
+                              <li><a href="#" class="active"><i class="fa fa-video-camera"></i>Video <span class="icoDown fa fa-chevron-down"></span></a>
+                                <ul>
+                                  <li><a href="allVideo.html" class="selected">Tất cả video</a></li>
+                                  <li><a href="allVideoApprove.html">Duyệt video<span class="numMenu">20</span></a></li>
+                                  <li><a href="upload.html">Upload video mới</a></li>
+                                  <li><a href="uploadBulk.html">Upload cùng lúc</a></li>
+                                  <li><a href="allPlaylist.html">Danh sách phát</a></li>
+                                  <li><a href="categoryManager.html">Quản lý chuyên mục</a></li>
+                                  <li><a href="playerSetting.html">Cài đặt Player</a></li>
+                                </ul>
+                              </li>
+                              <li><a href="#"><i class="fa fa-bar-chart-o"></i>Thống kê<span class="icoDown fa fa-chevron-down"></span></a>
+                                <ul>
+                                  <li><a href="analytics.html">Tổng quan</a></li>
+                                  <li><a href="#">Theo người dùng</a></li>
+                                </ul>
+                              </li>
+                              <li><a href="userManager.html"><i class="fa fa-user"></i>Người dùng</a>
+                              </li>
+                              <li><a href="#"><i class="fa fa-bullhorn"></i>Quảng cáo<span class="icoDown fa fa-chevron-down"></span></a>
+                                <ul>
+                                  <li><a href="domainManager.html">Quản lý trang web</a></li>
+                                  <li><a href="adMannagerGlobal.html">Quản lý Adtag</a></li>
+                                </ul>
+                              </li>
+                            </ul>
+                            
+                        </div>
+                    </div>
+                    
+                </div><!--end sidebar -->
+                
+                <div class="wrapperContent">
+                	
+                    <div class="header clearfix">
+                    	
+                        <div class="searchBox">
+                        	<button type="submit" class="btn btnSearch"><i class="fa fa-search"></i></button>
+                            <input class="formGlobal seachInput" placeholder="Nhập tên hoặc id video..." />
+                        </div>
+                        
+                        <div class="account">
+                        	<div class="userAcount dropdown">
+                            	<a href="#" class="channelName btnDropdown">Đời sống & pháp luật<i class="fa fa-caret-down"></i></a>
+                                <div class="dropdownDiv menuChannel">
+                                	<div class="swithChannel">Quản lý channel:</div>
+                                    <ul class="scrollable">
+                                        <li><a href="#">Tin Mới</a></li>
+                                        <li><a href="#">Thể Thao 24/7</a></li>
+                                        <li><a href="#">Người Đưa Tin</a></li>
+                                        <li><a href="#">Tin Mới</a></li>
+                                        <li><a href="#">Thể Thao 24/7</a></li>
+                                        <li><a href="#">Người Đưa Tin</a></li>
+                                        <li><a href="#">Tin Mới</a></li>
+                                        <li><a href="#">Thể Thao 24/7</a></li>
+                                        <li><a href="#">Người Đưa Tin</a></li>
+                                        <li><a href="#">Tin Mới</a></li>
+                                        <li><a href="#">Thể Thao 24/7</a></li>
+                                        <li><a href="#">Người Đưa Tin</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        	<div class="notification"><a href="upload.html" class="notificationIco"><i class="fa fa-cloud-upload"></i></a></div>
+                        	<div class="notification dropdown">
+                            	<a href="#" class="notificationIco btnDropdown"><i class="fa fa-bell"></i><span class="numNof">2</span></a>
+                                <div class="dropdownDiv boxNof">
+                                	<div class="headBoxNof">
+                                    	Bạn có 2 thông báo <a href="#" class="btnReadAsAll">Đã xem tất cả</a>
+                                    </div>
+                                    <ul class="listNof scrollable">
+                                    	<li>
+                                        	<a class="unread" href="activityVideo.html">Video <span class="boldNof">Muôn kiểu hành xử 'xấu' của người Việt khi gặp Cảnh sát giao thông</span> do <span class="boldNof">Phước Anh</span> upload đề nghị bạn duyệt <br /> <span class="timeNof">25 phút trước</span></a>
+                                            <a href="#" class="btnRead tooltipText" title="Đã xem"><i class="fa fa-circle-o"></i></a>
+                                        </li>
+                                        <li>
+                                        	<a href="#">Video <span class="boldNof">Ebola chính thức bị dập tắt</span> do <span class="boldNof">bạn</span> upload đã sẵn sàng sử dụng <br /> <span class="timeNof">2 phút trước</span></a>
+                                        </li>
+                                        <li>
+                                        	<a class="unread" href="activityVideo.html">Video <span class="boldNof">Muôn kiểu hành xử 'xấu' của người Việt khi gặp Cảnh sát giao thông</span> do <span class="boldNof">Phước Anh</span> upload đề nghị bạn duyệt <br /> <span class="timeNof">25 phút trước</span></a>
+                                            <a href="#" class="btnRead tooltipText" title="Đã xem"><i class="fa fa-circle-o"></i></a>
+                                        </li>
+                                        <li>
+                                        	<a href="#"><span class="boldNof">Bạn</span> đang có 4 video chờ duyệt <br /> <span class="timeNof">1 giờ trước</span></a>
+                                        </li>
+                                        <li>
+                                        	<a href="#">Video <span class="boldNof">Đua xe trái phép tại Bình Dương</span> của <span class="boldNof">Bạn</span> bị <span class="boldNof">Kevin Vu</span> từ chối <br /> <span class="timeNof">2 giờ trước</span></a>
+                                        </li>
+                                        <li>
+                                        	<a href="#">Video <span class="boldNof">Ebola chính thức bị dập tắt</span> do <span class="boldNof">bạn</span> upload đã sẵn sàng sử dụng <br /> <span class="timeNof">2 phút trước</span></a>
+                                        </li>
+                                        <li>
+                                        	<a href="#"><span class="boldNof">Bạn</span> đang có 4 video chờ duyệt <br /> <span class="timeNof">1 giờ trước</span></a>
+                                        </li>
+                                        <li>
+                                        	<a href="#">Video <span class="boldNof">Đua xe trái phép tại Bình Dương</span> của <span class="boldNof">Bạn</span> bị <span class="boldNof">Kevin Vu</span> từ chối <br /> <span class="timeNof">2 giờ trước</span></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="notification userAcount dropdown">
+                            	<a href="#" class="notificationIco userName btnDropdown"><i class="fa fa-cog"></i></a>
+                                <a href="#" class="userThumb"><img src="images/user.jpg" alt="Messi" /></a>
+                                <ul class="dropdownDiv menuAccount">
+                                	<li><a href="changeProfile.html"><i class="fa fa-edit"></i>Đổi thông tin tài khoản</a></li>
+                                    <!--<li><a href="#"><i class="fa fa-user"></i>Tình trạng tài khoản</a></li>-->
+                                    <li><a href="support.html"><i class="fa fa-envelope"></i>Hỗ trợ</a></li>
+                                    <li><a href="#"><i class="fa fa-sign-out"></i>Thoát</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                    </div><!--end header -->
+                    
+                    
+                    <div class="content">
+                        
+                        <div class="boxContent">
+                            <ul class="breadcrumb clearfix">
+                                <li><a href="#">Meme Cloud</a><i class="fa fa-angle-right"></i></li>
+                                <li class="active">
+                                    Tất cả video
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="tabsGlobal">
+                        
+                            <ul class="tabsVideo">
+                                <li><a href="allVideo.html">Video đã duyệt<i class="fa fa-circle"></i><span class="numTab">1500</span></a></li>
+                                <li><a href="allVideoApprove.html">Video chờ duyệt<i class="fa fa-circle"></i><span class="numTab">20</span></a></li>
+                                <li class="current"><a href="allVideoDenied.html">Video bị từ chối<i class="fa fa-circle"></i><span class="numTab">50</span></a></li>
+                            </ul>
+                            
+                            <div class="tabsContentGlobal">
+                                <div class="tableData current">
+                                    <div class="fillterData clearfix">
+                                        <div class="selectived">
+                                            <select class="fillterRecord formGlobal">
+                                                <option>Tác vụ</option>
+                                                <option>Xóa</option>
+                                                <option>Từ chối</option>
+                                                <option>Tắt quảng cáo</option>
+                                            </select>
+                                        </div>
+                                        <div class="col10p">
+                                            <input type="text" class="formGlobal searchData" placeholder="Tìm nhanh video" />
+                                            <button type="submit" class="btn btnSearchData"><i class="fa fa-search"></i></button> 
+                                        </div>
+                                        <div class="advanceSearch">
+                                            <a id="advanceSearch3" href="#" class="btn cyan">Tìm kiếm nâng cao</a>
+                                        </div>
+                                        <div class="col2p">
+                                            <a href="#" class="btn orange">Export</a>
+                                        </div>
+                                        
+                                        <div class="col2p">
+                                            <select class="fillterSort formGlobal">
+                                                <option>Sắp xếp</option>
+                                                <option>Mới nhất</option>
+                                                <option>Cũ nhất</option>
+                                                <option>Xem nhiều nhất</option>
+                                                <option>Xem ít nhất</option>
+                                            </select>
+                                        </div>
+                                        <div class="col2p">
+                                            <select class="fillterRecord formGlobal">
+                                                <option>Số bản ghi</option>
+                                                <option>10</option>
+                                                <option>20</option>
+                                            </select>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="clearfix"></div>
+                                    <div class="fillterADS clearfix">
+                                        <div class="col20p">
+                                            <select class="fillterSort formGlobal">
+                                                <option>Trạng thái</option>
+                                                <option>Đang convert</option>
+                                                <option>Hoàn thành</option>
+                                            </select>
+                                        </div>
+                                        <div class="col20p">
+                                            <select class="fillterSort formGlobal">
+                                                <option>Chuyên mục</option>
+                                                <option>Giải trí</option>
+                                                <option>Phim hay</option>
+                                            </select>
+                                        </div>
+                                        <div class="col20p">
+                                            <select class="fillterSort formGlobal">
+                                                <option>Thể loại</option>
+                                                <option>Thể thao</option>
+                                                <option>Hài hước</option>
+                                            </select>
+                                        </div>
+                                        <div class="col20p">
+                                            <select class="fillterSort formGlobal">
+                                                <option>Người upload</option>
+                                                <option>Phước Anh</option>
+                                                <option>Đức Mạnh</option>
+                                            </select>
+                                        </div>
+                                        <div class="col20p">
+                                            <select class="fillterSort formGlobal">
+                                                <option>Quảng cáo</option>
+                                                <option>Tắt quảng cáo</option>
+                                                <option>Bật quảng cáo</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="tableDataVideo">
+                                    
+                                        <div class="CSSTableGenerator" >
+                                            <table >
+                                                <tr>
+                                                    <td width="30">
+                                                        <input id="checkAll3" type="checkbox" class="checkboxRow" />
+                                                    </td>
+                                                    <td width="116">
+                                                        Hình ảnh
+                                                    </td>
+                                                    <td >
+                                                        Tiêu đề
+                                                    </td>
+                                                    <td>
+                                                        Trạng thái
+                                                    </td>
+                                                    <td>
+                                                        Chuyên mục / thể loại
+                                                    </td>
+                                                    <td >
+                                                        Người upload
+                                                    </td>
+                                                    <td >
+                                                        Lý do từ chối
+                                                    </td>
+                                                    <td >
+                                                        Live URL
+                                                    </td>
+                                                    <td width="100">
+                                                        Mã nhúng
+                                                    </td>
+                                                    <td width="230">
+                                                        Tác vụ
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <input type="checkbox" class="checkboxRow" />
+                                                    </td>
+                                                    <td>
+                                                        <div class="imgDataVideo"><img src="images/video-img.jpg" alt="hình ảnh" /><a href="#" class="btnEditThumb" data-popup-target="#popupChangeThumb"><i class="fa fa-camera"></i></a></div>
+                                                    </td>
+                                                    <td >
+                                                        <a href="#" class="titleDataVideo" target="_blank">Lệ Rơi, Đỗ Duy Nam ft Hữu Công - Chắc Ai Đó Sẽ Về (Cover)</a><br />id: <span class="idDataVideo">NHL68BHH</span>
+                                                    </td>
+                                                    <td class="text-center">
+                                                        <i class="fa fa-spinner statusDataProcess tooltipText" title="Đang convert"></i>
+                                                    </td>
+                                                    <td class="text-center">
+                                                        Clip hot / Giải trí
+                                                    </td>
+                                                    <td class="text-center">
+                                                        Phước Anh <br />
+                                                        <span class="timeUpload">08:00 20/11/2014</span>
+                                                    </td>
+                                                    <td class="text-center">
+                                                        Video vi phạm thuần phong mỹ tục Việt Nam
+                                                    </td>
+                                                    <td class="text-center">
+                                                        <a href="#" class="btn btnLiveURL blue tooltipText" title="Xem trang"><span class="fa fa-link"></span></a>
+                                                    </td>
+                                                    <td class="text-center">
+                                                        <a href="#" class="btn btnCopy cyan tooltipText" title="Copy mã nhúng"><span class="fa fa-copy"></span></a>
+                                                        <a href="#" class="btn btnSetting green tooltipText" title="Tùy chỉnh mã nhúng"><span class="fa fa-gear"></span></a>
+                                                    </td>
+                                                    <td class="text-center">
+                                                        <a href="#" class="btn btnDefault btnAction"><i class="fa fa-edit"></i><span class="hiddenMD">Sửa</span></a>
+                                                        <a href="#" class="btn btnDefault btnAction"><i class="fa fa-trash-o"></i><span class="hiddenMD">Xóa</span></a>
+                                                        <div class="dropdown floatLeft">
+                                                            <a href="#" class="btn btnDefault btnAction btnDropdown"><i class="fa fa-toggle-down"></i><span class="hiddenMD">Khác</span></a>
+                                                            <div class="dropdownDiv dropdownList">
+                                                                <ul class="moreMenuList">
+                                                                    <li><a href="#">Từ chối</a></li>
+                                                                    <li><a href="#">Tắt quảng cáo</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr><!-- end row data -->
+                                                <tr>
+                                                    <td>
+                                                        <input type="checkbox" class="checkboxRow" />
+                                                    </td>
+                                                    <td>
+                                                        <div class="imgDataVideo"><img src="images/video-img.jpg" alt="hình ảnh" /><a href="#" class="btnEditThumb" data-popup-target="#popupChangeThumb"><i class="fa fa-camera"></i></a></div>
+                                                    </td>
+                                                    <td >
+                                                        <a href="#" class="titleDataVideo" target="_blank">Cơn Mưa Ngang Qua Phiên Bản Campuchia</a><br />id: <span class="idDataVideo">NHL68BHH</span>
+                                                    </td>
+                                                    <td class="text-center">
+                                                        <i class="fa fa-check statusDataSuccess tooltipText" title="Hoàn thành"></i>
+                                                    </td>
+                                                    <td class="text-center">
+                                                        Phái đẹp / Thời trang - làm đẹp
+                                                    </td>
+                                                    <td class="text-center">
+                                                        Phước Anh <br />
+                                                        <span class="timeUpload">08:00 20/11/2014</span>
+                                                    </td>
+                                                    <td class="text-center">
+                                                        Video vi phạm bản quyền
+                                                    </td>
+                                                    <td class="text-center">
+                                                        <a href="#" class="btn btnLiveURL blue tooltipText" title="Xem trang"><span class="fa fa-link"></span></a>
+                                                    </td>
+                                                    <td class="text-center">
+                                                        <a href="#" class="btn btnCopy cyan tooltipText" title="Copy mã nhúng"><span class="fa fa-copy"></span></a>
+                                                        <a href="#" class="btn btnSetting green tooltipText" title="Tùy chỉnh mã nhúng"><span class="fa fa-gear"></span></a>
+                                                    </td>
+                                                    <td class="text-center">
+                                                        <a href="#" class="btn btnDefault btnAction"><i class="fa fa-edit"></i><span class="hiddenMD">Sửa</span></a>
+                                                        <a href="#" class="btn btnDefault btnAction"><i class="fa fa-trash-o"></i><span class="hiddenMD">Xóa</span></a>
+                                                        <div class="dropdown floatLeft">
+                                                            <a href="#" class="btn btnDefault btnAction btnDropdown"><i class="fa fa-toggle-down"></i><span class="hiddenMD">Khác</span></a>
+                                                            <div class="dropdownDiv dropdownList">
+                                                                <ul class="moreMenuList">
+                                                                    <li><a href="#">Từ chối</a></li>
+                                                                    <li><a href="#">Tắt quảng cáo</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr><!-- end row data -->
+                                                
+                                                
+                                            </table>
+                                        </div>
+            
+                                    </div><!-- end tableDataVideo -->
+                                    <div class="paginationData clearfix">
+                                        <ul class="pagination">
+                                            <li><a href="#"><i class="fa fa-angle-double-left"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-angle-left"></i></a></li>
+                                            <li><a href="#">1</a></li>
+                                            <li><a href="#" class="active">2</a></li>
+                                            <li><a href="#">3</a></li>
+                                            <li><a href="#">4</a></li>
+                                            <li><a href="#">5</a></li>
+                                            <li><a href="#"><i class="fa fa-angle-right"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-angle-double-right"></i></a></li>
+                                        </ul>
+                                        <p>Hiển thị 10 trong tổng 1500 bản ghi</p>
+                                    </div>
+                                </div><!--end #approveTab -->
+                                
+                            </div><!--end tabsContentGlobal -->
+                            
+                        </div><!--end tabsGlobal -->
+                        
+                        
+                        
+                    </div><!--end content -->
+                    
+                </div><!--end wrapperContent -->
+            
+            </div><!--end containerTable -->
+        
+        </div><!--end container -->
+        
+    </div><!--end wrapper -->
+    
+    <div id="popupApprove" class="popup">
+        <div class="popup-body">
+        	<div class="popupHead">
+                <h3>Vui lòng duyệt video</h3>
+                <span class="popup-exit"><i class="fa fa-times"></i></span>
+            </div>
+            <div class="popupContent scrollable clearfix">
+                
+                <div class="popupContentApprove clearfix">
+                	<div class="approveYes">
+                        <p>Bạn cần đồng ý thì video mới có thể sử dụng được</p>
+                        <button type="button" class="btn btnYes">Đồng ý</button>
+                    </div>
+                    <div class="approveNo">
+                        <textarea placeholder="Lý do từ chối" class="formGlobal" rows="1"></textarea>
+                        <button type="button" class="btn btnDenied">Từ chối</button>
+                    </div>
+                </div>
+                
+                <div class="popupContentInfo">
+                	<div class="popupPlayer">
+                    	Script Call Player
+                    </div>
+                    <div class="popupInfoVideo">
+                    	<h2>Chắc ai đó sẽ về</h2>
+                        <p>
+                        	<span class="greyText">Upload bởi:</span> <a href="#" class="popupLink">Phước Anh</a> <span class="greyText">lúc 20h30 ngày 12/1/2015</span>
+                        </p>
+                        <p>
+                        	<span class="greyText">Chuyên mục:</span> <a href="#" class="popupLink">Video sưu tầm</a>
+                        </p>
+                        <p>
+                        	<span class="greyText">Thể loại</span> <a href="#" class="popupLink">Hài hước</a>
+                        </p>
+                        <p>
+                        	Là một series nhạc chế theo các sự kiện trong tuần của Trắng, hy vọng sẽ mang đến cho các bạn những giây phút thư giãn thoải mái...
+Bài gốc: Tìm được nhau khó thế nào - Mr. Siro. Là một series nhạc chế theo các sự kiện trong tuần của Trắng, hy vọng sẽ mang đến cho các bạn những giây phút thư giãn thoải mái...
+Bài gốc: Tìm được nhau khó thế nào - Mr. Siro.Là một series nhạc chế theo các sự kiện trong tuần của Trắng, hy vọng sẽ mang đến cho các bạn những giây phút thư giãn thoải mái...
+Bài gốc: Tìm được nhau khó thế nào - Mr. Siro. 
+                        </p>
+                    </div>
+                </div>
+                
+                
+                
+            </div>
+        </div>
+    </div>
+    
+    <div class="popupWrapper">
+        <div id="popupChangeThumb" style="width:700px;" class="popup">
+            <div class="popup-body">
+                <div class="popupHead">
+                    <h3>Chỉnh sửa hình ảnh</h3>
+                    <span class="popup-exit"><i class="fa fa-times"></i></span>
+                </div>
+                <div class="popupContent clearfix">
+                    <div class="popupContentBox clearfix">
+                        <div class="tabsThumbPopup">
+                            <ul class="tabsThumb clearfix">
+                                <li class="current"><a href="#thumbConvert">Hình convert từ video</a></li>
+                                <li><a id="thumbCropTab" href="#thumbComputer">Chọn hình từ máy tính</a></li>
+                            </ul>
+                            
+                            <div class="tabsContentThumb">
+                            
+                                <div id="thumbConvert" class="thumbImage current">
+                                    <ul class="listThumbConvert clearfix">
+                                        <li><a href="#"><img src="images/img2.jpg" /></a></li>
+                                        <li><a href="#"><img src="images/img3.jpg" /></a></li>
+                                        <li><a href="#"><img src="images/img4.jpg" /></a></li>
+                                        <li><a href="#"><img src="images/img5.jpg" /></a></li>
+                                        <li><a href="#" class="selected"><img src="images/img6.jpg" /></a></li>
+                                        <li><a href="#"><img src="images/img7.jpg" /></a></li>
+                                    </ul>
+                                    <div class="thumbFooter">
+                                        <button type="submit" class="btn btnPrimary">Lưu thay đổi</button>
+                                    </div>
+                                </div><!-- #thumbConvert -->
+                                
+                                <div id="thumbComputer" class="thumbImage">
+                                    <div class="pickImage">
+                                        <div class="btn blue btnUploadFile">
+                                            <i class="fa fa-cloud-upload"></i>Upload file video
+                                            <input id="inputImage" name="file" type="file" accept="image/*"/>
+                                        </div>
+                                        <span class="note">Hỗ trợ định dạng .jpg .png</span>
+                                    </div>
+                                    <div class="cropImage clearfix">
+                                        <div class="cropImageLeft">
+                                            <div class="eg-wrapper">
+                                                <img class="cropper" src="images/video-img.jpg" alt="Khung hình">
+                                            </div>
+                                        </div>
+                                        <div class="cropImageRight">
+                                            <div class="eg-preview clearfix">
+                                                <div class="preview preview-lg"></div>
+                                            </div>
+                                            <button class="btn cyan btnZoom" id="zoomIn" type="button"><i class="fa fa-plus"></i></button>
+                                            <button class="btn cyan btnZoom" id="zoomOut" type="button"><i class="fa fa-minus"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="thumbFooter">
+                                        <button type="submit" id="getDataURL3" class="btn btnPrimary">Lưu thay đổi</button>
+                                    </div>
+                                    <div class="valueImage">
+                                        <label>Giá trị sau khi crop image</label>
+                                        <div id="showDataURL"></div>
+                                    </div>
+                                    
+                                </div><!-- #thumbComputer -->
+                                
+                            </div>
+                        </div><!-- tabsThumb -->
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="popup-overlay"></div>
+    
+    </div><!-- end popupWrapper -->
+    
+</body>
+
+</html>

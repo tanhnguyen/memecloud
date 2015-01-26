@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1200px" /> 
+    <title>Login | MeMe Cloud</title>
+    <link href="css/reset.css" type="text/css" rel="stylesheet">
+    <link href="css/global.css" type="text/css" rel="stylesheet">
+	<script src="js/jquery.min.js"></script>
+    <script>
+    	$(document).ready(function () {
+			$('.forgotPw').click(function(){
+				$('.login').hide();
+				$('.forgotPwBox').show();
+			});	
+			$('#btnBack').click(function(){
+				$('.login').show();
+				$('.forgotPwBox').hide();
+			});	
+		});
+    </script>
+</head>
+
+<body>
+<div class="wrapperLogin">
+	<div class="overlayLogin"></div>
+	<div class="boxLogin">	
+        <div class="logoLogin"><h1>Meme Cloud</h1></div>
+        <div class="login">
+        	<form>
+                <div class="formGroup">
+                    <label>Email:</label>
+                    <input type="text" class="formGlobal" />
+                </div>
+                <div class="formGroup">
+                    <label>Mật khẩu:</label>
+                    <input type="password" class="formGlobal" />
+                </div>
+                <div class="formGroup">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" checked> Ghi nhớ
+                        </label>
+                    </div>
+                </div>
+                <div class="formGroup">
+                    <button type="submit" class="btn btnPrimary">Đăng nhập</button>
+                    <a href="#" class="forgotPw">Bạn quên mật khẩu?</a>
+                </div>
+            </form> 
+        </div>
+        <div class="forgotPwBox">
+        	<div class="formGroup">
+                <label>Email:</label>
+                <input type="text" class="formGlobal" placeholder="Nhập email đã đăng ký" />
+            </div>
+            <div class="formGroup">
+            	<button id="btnBack" type="button" class="btn btnDefault">Quay lại</button>
+                <button type="submit" class="btn btnPrimary">Lấy lại mật khẩu</button>
+            </div>
+            <!--<div class="getSuccess green">
+           		<i class="fa fa-check-circle"></i>Meme vừa gửi một email đến hộp thư của bạn. Hãy kiểm tra hộp thư và đặt lại mật khẩu mới nhé!
+            </div>-->
+        </div>
+    </div>
+</div>
+</body>
+</html>

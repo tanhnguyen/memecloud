@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1200px" /> 
+    <title>Create Playlist | MeMe Cloud</title>
+    <!-- Global CSS -->
+    <link href="css/font-awesome.css" type="text/css" rel="stylesheet">
+    <link href="css/reset.css" type="text/css" rel="stylesheet">
+    <link href="css/global.css" type="text/css" rel="stylesheet">
+    <!-- End Global CSS -->
+    
+    <!-- Page CSS -->
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <link href="css/jquery.tagsinput.css" type="text/css" rel="stylesheet">
+    <link href="css/sumoselect.css" type="text/css" rel="stylesheet">
+    <!-- End Page CSS -->
+    
+    <!-- Global Script -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/placeholder.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
+    <script src="js/disableScrollBar.js"></script>
+    <script src="js/global.js"></script>
+    <!-- End Global Script -->
+    
+    <!-- Page Script -->
+    <script src="js/jquery.sumoselect.min.js"></script>
+    
+    <script src="js/createPlaylist.js"></script>
+    <!--End Page Script -->
+</head>
+
+<body>
+	
+    <div class="wrapper">
+    	
+        <div class="container">
+        
+            <div class="containerTable">
+            
+                <div class="sidebar">
+                    <div class="sidebarFixed">
+                        <div class="logo">
+                            <a href="#" title="Meme Cloud">Meme Cloud</a>
+                        </div>
+                        
+                        <div class="mainMenu">
+    
+                            <ul id="nav">
+                              <li><a href="#" class="active"><i class="fa fa-video-camera"></i>Video <span class="icoDown fa fa-chevron-down"></span></a>
+                                <ul>
+                                  <li><a href="allVideo.html">Tất cả video</a></li>
+                                  <li><a href="allVideoApprove.html">Duyệt video<span class="numMenu">20</span></a></li>
+                                  <li><a href="#" class="selected">Upload video mới</a></li>
+                                  <li><a href="uploadBulk.html">Upload cùng lúc</a></li>
+                                  <li><a href="allPlaylist.html">Danh sách phát</a></li>
+                                  <li><a href="categoryManager.html">Quản lý chuyên mục</a></li>
+                                  <li><a href="playerSetting.html">Cài đặt Player</a></li>
+                                </ul>
+                              </li>
+                              <li><a href="#"><i class="fa fa-bar-chart-o"></i>Thống kê<span class="icoDown fa fa-chevron-down"></span></a>
+                                <ul>
+                                  <li><a href="analytics.html">Tổng quan</a></li>
+                                  <li><a href="#">Theo người dùng</a></li>
+                                </ul>
+                              </li>
+                              <li><a href="userManager.html"><i class="fa fa-user"></i>Người dùng</a>
+                              </li>
+                              <li><a href="#"><i class="fa fa-bullhorn"></i>Quảng cáo<span class="icoDown fa fa-chevron-down"></span></a>
+                                <ul>
+                                  <li><a href="domainManager.html">Quản lý trang web</a></li>
+                                  <li><a href="adMannagerGlobal.html">Quản lý Adtag</a></li>
+                                </ul>
+                              </li>
+                            </ul>
+                            
+                        </div>
+                    </div>
+                    
+                </div><!--end sidebar -->
+                
+                <div class="wrapperContent">
+                	
+                    <div class="header clearfix">
+                    	
+                        <div class="searchBox">
+                        	<button type="submit" class="btn btnSearch"><i class="fa fa-search"></i></button>
+                            <input class="formGlobal seachInput" placeholder="Nhập tên hoặc id video..." />
+                        </div>
+                        
+                        <div class="account">
+                        	<div class="userAcount dropdown">
+                            	<a href="#" class="channelName btnDropdown">Đời sống & pháp luật<i class="fa fa-caret-down"></i></a>
+                                <div class="dropdownDiv menuChannel">
+                                	<div class="swithChannel">Quản lý channel:</div>
+                                    <ul class="scrollable">
+                                        <li><a href="#">Tin Mới</a></li>
+                                        <li><a href="#">Thể Thao 24/7</a></li>
+                                        <li><a href="#">Người Đưa Tin</a></li>
+                                        <li><a href="#">Tin Mới</a></li>
+                                        <li><a href="#">Thể Thao 24/7</a></li>
+                                        <li><a href="#">Người Đưa Tin</a></li>
+                                        <li><a href="#">Tin Mới</a></li>
+                                        <li><a href="#">Thể Thao 24/7</a></li>
+                                        <li><a href="#">Người Đưa Tin</a></li>
+                                        <li><a href="#">Tin Mới</a></li>
+                                        <li><a href="#">Thể Thao 24/7</a></li>
+                                        <li><a href="#">Người Đưa Tin</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        	<div class="notification"><a href="upload.html" class="notificationIco"><i class="fa fa-cloud-upload"></i></a></div>
+                        	<div class="notification dropdown">
+                            	<a href="#" class="notificationIco btnDropdown"><i class="fa fa-bell"></i><span class="numNof">2</span></a>
+                                <div class="dropdownDiv boxNof">
+                                	<div class="headBoxNof">
+                                    	Bạn có 2 thông báo <a href="#" class="btnReadAsAll">Đã xem tất cả</a>
+                                    </div>
+                                    <ul class="listNof scrollable">
+                                    	<li>
+                                        	<a class="unread" href="activityVideo.html">Video <span class="boldNof">Muôn kiểu hành xử 'xấu' của người Việt khi gặp Cảnh sát giao thông</span> do <span class="boldNof">Phước Anh</span> upload đề nghị bạn duyệt <br /> <span class="timeNof">25 phút trước</span></a>
+                                            <a href="#" class="btnRead tooltipText" title="Đã xem"><i class="fa fa-circle-o"></i></a>
+                                        </li>
+                                        <li>
+                                        	<a href="#">Video <span class="boldNof">Ebola chính thức bị dập tắt</span> do <span class="boldNof">bạn</span> upload đã sẵn sàng sử dụng <br /> <span class="timeNof">2 phút trước</span></a>
+                                        </li>
+                                        <li>
+                                        	<a class="unread" href="activityVideo.html">Video <span class="boldNof">Muôn kiểu hành xử 'xấu' của người Việt khi gặp Cảnh sát giao thông</span> do <span class="boldNof">Phước Anh</span> upload đề nghị bạn duyệt <br /> <span class="timeNof">25 phút trước</span></a>
+                                            <a href="#" class="btnRead tooltipText" title="Đã xem"><i class="fa fa-circle-o"></i></a>
+                                        </li>
+                                        <li>
+                                        	<a href="#"><span class="boldNof">Bạn</span> đang có 4 video chờ duyệt <br /> <span class="timeNof">1 giờ trước</span></a>
+                                        </li>
+                                        <li>
+                                        	<a href="#">Video <span class="boldNof">Đua xe trái phép tại Bình Dương</span> của <span class="boldNof">Bạn</span> bị <span class="boldNof">Kevin Vu</span> từ chối <br /> <span class="timeNof">2 giờ trước</span></a>
+                                        </li>
+                                        <li>
+                                        	<a href="#">Video <span class="boldNof">Ebola chính thức bị dập tắt</span> do <span class="boldNof">bạn</span> upload đã sẵn sàng sử dụng <br /> <span class="timeNof">2 phút trước</span></a>
+                                        </li>
+                                        <li>
+                                        	<a href="#"><span class="boldNof">Bạn</span> đang có 4 video chờ duyệt <br /> <span class="timeNof">1 giờ trước</span></a>
+                                        </li>
+                                        <li>
+                                        	<a href="#">Video <span class="boldNof">Đua xe trái phép tại Bình Dương</span> của <span class="boldNof">Bạn</span> bị <span class="boldNof">Kevin Vu</span> từ chối <br /> <span class="timeNof">2 giờ trước</span></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="notification userAcount dropdown">
+                            	<a href="#" class="notificationIco userName btnDropdown"><i class="fa fa-cog"></i></a>
+                                <a href="#" class="userThumb"><img src="images/user.jpg" alt="Messi" /></a>
+                                <ul class="dropdownDiv menuAccount">
+                                	<li><a href="changeProfile.html"><i class="fa fa-edit"></i>Đổi thông tin tài khoản</a></li>
+                                    <!--<li><a href="#"><i class="fa fa-user"></i>Tình trạng tài khoản</a></li>-->
+                                    <li><a href="support.html"><i class="fa fa-envelope"></i>Hỗ trợ</a></li>
+                                    <li><a href="#"><i class="fa fa-sign-out"></i>Thoát</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                    </div><!--end header -->
+                    
+                    
+                    <div class="content">
+                        
+                        <div class="boxContent">
+                            <ul class="breadcrumb clearfix">
+                                <li><a href="#">Meme Cloud</a><i class="fa fa-angle-right"></i></li>
+                                <li><a href="allPlaylist.html">Danh sách phát</a><i class="fa fa-angle-right"></i></li>
+                                <li class="active">
+                                    Tạo playlist mới
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="boxContent clearfix">
+                        	<div class="headBoxContent">
+                            	<h1>Tạo playlist mới</h1>
+                            </div>
+                        	<div class="formUpload">
+                                <div class="col50p">
+                                    <div class="formGroup">
+                                      <label>Tiêu đề:</label>
+                                      <input type="text" placeholder="Nhập tiêu đề" class="formGlobal">
+                                    </div>
+                                    <div class="formGroup">
+                                      <label>Miêu tả:</label>
+                                      <textarea rows="5" placeholder="Nhập miêu tả" class="formGlobal"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col50p">
+                                    <div class="formGroup">
+                                        <label>Live URL</label>
+                                        <div class="inputLink">
+                                            <input type="text" placeholder="http://tinmoi.com/che-tao-my-nhan-2097.html" class="formGlobal">
+                                            <span class="icoLink"><i class="fa fa-link"></i></span>
+                                        </div>
+                                        <p class="note">Live URL là đường dẫn (link) đến trang web có nhúng video này</p>
+                                    </div>
+                                    <div class="formGroup">
+                                        <label>Hình đại diện:</label>
+                                        <div class="thumbUpload">
+                                            <img width="153" height="86" alt="Image Default" src="images/imgDefault.jpg">
+                                            <div class="btn blue btnUploadFile">
+                                                <i class="fa fa-picture-o"></i>Upload hình
+                                                <input type="file" name="upload">
+                                            </div>
+                                            <p>Hình đại diện sẽ tự động lấy hình của video đầu tiên</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                                <div class="addToPlaylist clearfix">
+                                	<div class="col50p">
+                                    	<div class="formGroup searchToAdd">
+                                            <label>Tìm kiếm trong kho video của bạn</label>
+                                            <div class="searchRelate">
+                                                <div class="wSearchSuggest"></div>
+                                                <input id="itemsVideo" type="text" class="formGlobal" placeholder="Tìm kiếm tên hoặc id video" />
+                                                <input type="hidden" id="itemsVideo_id">
+                                                <span class="fa fa-search"></span>
+                                                <a href="#" class="btn btnDelRelate"><i class="fa fa-times"></i></a>
+                                            </div>
+                                            <ul class="autoSuggest scrollable">
+                                                <li>
+                                                    <a href="#">
+                                                        <img src="images/img1.jpg" />
+                                                        <p>
+                                                            Trang web phát đọc quyền giải ngoại hạng Anh <br />
+                                                            <span>Thể thao 247 - 25/12/2014</span>
+                                                        </p>
+                                                    </a>
+                                                    <a href="#" class="btn btnAddVideo" title=""><i class="fa fa-plus"></i></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <img src="images/img2.jpg" />
+                                                        <p>
+                                                            Trang web phát đọc quyền giải ngoại hạng Anh <br />
+                                                            <span>Thể thao 247 - 25/12/2014</span>
+                                                        </p>
+                                                    </a>
+                                                    <a href="#" class="btn btnAddVideo"><i class="fa fa-plus"></i></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <img src="images/img3.jpg" />
+                                                        <p>
+                                                            Trang web phát đọc quyền giải ngoại hạng Anh <br />
+                                                            <span>Thể thao 247 - 25/12/2014</span>
+                                                        </p>
+                                                    </a>
+                                                    <a href="#" class="btn btnAddVideo"><i class="fa fa-plus"></i></a>
+                                                </li>
+                                                 <li><a href="#">
+                                                        <img src="images/img4.jpg" />
+                                                        <p>
+                                                            Trang web phát đọc quyền giải ngoại hạng Anh <br />
+                                                            <span>Thể thao 247 - 25/12/2014</span>
+                                                        </p>
+                                                    </a>
+                                                    <a href="#" class="btn btnAddVideo"><i class="fa fa-plus"></i></a>
+                                                </li>
+                                                <li><a href="#">
+                                                        <img src="images/img1.jpg" />
+                                                        <p>
+                                                            Trang web phát đọc quyền giải ngoại hạng Anh <br />
+                                                            <span>Thể thao 247 - 25/12/2014</span>
+                                                        </p>
+                                                    </a>
+                                                    <a href="#" class="btn btnAddVideo"><i class="fa fa-plus"></i></a>
+                                                </li>
+                                                <li><a href="#">
+                                                        <img src="images/img2.jpg" />
+                                                        <p>
+                                                            Trang web phát đọc quyền giải ngoại hạng Anh <br />
+                                                            <span>Thể thao 247 - 25/12/2014</span>
+                                                        </p>
+                                                    </a>
+                                                    <a href="#" class="btn btnAddVideo"><i class="fa fa-plus"></i></a>
+                                                </li>
+                                                <li><a href="#">
+                                                        <img src="images/img3.jpg" />
+                                                        <p>
+                                                            Trang web phát đọc quyền giải ngoại hạng Anh <br />
+                                                            <span>Thể thao 247 - 25/12/2014</span>
+                                                        </p>
+                                                    </a>
+                                                    <a href="#" class="btn btnAddVideo"><i class="fa fa-plus"></i></a>
+                                                </li>
+                                                 <li><a href="#">
+                                                        <img src="images/img4.jpg" />
+                                                        <p>
+                                                            Trang web phát đọc quyền giải ngoại hạng Anh <br />
+                                                            <span>Thể thao 247 - 25/12/2014</span>
+                                                        </p>
+                                                    </a>
+                                                    <a href="#" class="btn btnAddVideo"><i class="fa fa-plus"></i></a>
+                                                </li>
+                                            </ul><!--end autoSuggest -->
+                                        </div><!--end searchSuggest -->
+                                    </div>
+                                    <div class="col50p">
+                                    	<div class="formGroup listVideo">
+                                            <label><i class="fa fa-check"></i>Đã thêm vào danh sách phát <span class="numVideo">68 video</span></label>
+                                            <div class="headListVideo">
+                                            	<select name="category" multiple="multiple" class="selectSection">
+                                                    <option value="option1">Cũ nhất</option>
+                                                    <option value="option2">Mới nhất</option>
+                                                    <option value="option3">Theo tên</option>
+                                                  </select>
+                                            </div>
+                                            
+                                            <ul class="autoSuggest scrollable sortable">
+                                                <li>
+                                                    <span class="dragable"><i class="fa fa-arrows"></i></span>
+                                                    <a href="#">
+                                                        <img src="images/img1.jpg" />
+                                                        <p>
+                                                            Trang web phát đọc quyền giải ngoại hạng Anh <br />
+                                                            <span>Thể thao 247 - 25/12/2014</span>
+                                                        </p>
+                                                    </a>
+                                                    <a href="#" class="btn btnDelSuggest"><i class="fa fa-trash-o"></i></a>
+                                                </li>
+                                                <li>
+                                                    <span class="dragable"><i class="fa fa-arrows"></i></span>
+                                                    <a href="#">
+                                                        <img src="images/img2.jpg" />
+                                                        <p>
+                                                            Trang web phát đọc quyền giải ngoại hạng Anh <br />
+                                                            <span>Thể thao 247 - 25/12/2014</span>
+                                                        </p>
+                                                    </a>
+                                                    <a href="#" class="btn btnDelSuggest"><i class="fa fa-trash-o"></i></a>
+                                                </li>
+                                                <li>
+                                                    <span class="dragable"><i class="fa fa-arrows"></i></span>
+                                                    <a href="#">
+                                                        <img src="images/img3.jpg" />
+                                                        <p>
+                                                            Trang web phát đọc quyền giải ngoại hạng Anh <br />
+                                                            <span>Thể thao 247 - 25/12/2014</span>
+                                                        </p>
+                                                    </a>
+                                                    <a href="#" class="btn btnDelSuggest"><i class="fa fa-trash-o"></i></a>
+                                                </li>
+                                                 <li>
+                                                    <span class="dragable"><i class="fa fa-arrows"></i></span>
+                                                    <a href="#">
+                                                        <img src="images/img4.jpg" />
+                                                        <p>
+                                                            Trang web phát đọc quyền giải ngoại hạng Anh <br />
+                                                            <span>Thể thao 247 - 25/12/2014</span>
+                                                        </p>
+                                                    </a>
+                                                    <a href="#" class="btn btnDelSuggest"><i class="fa fa-trash-o"></i></a>
+                                                </li>
+                                                <li>
+                                                    <span class="dragable"><i class="fa fa-arrows"></i></span>
+                                                    <a href="#">
+                                                        <img src="images/img1.jpg" />
+                                                        <p>
+                                                            Trang web phát đọc quyền giải ngoại hạng Anh <br />
+                                                            <span>Thể thao 247 - 25/12/2014</span>
+                                                        </p>
+                                                    </a>
+                                                    <a href="#" class="btn btnDelSuggest"><i class="fa fa-trash-o"></i></a>
+                                                </li>
+                                                <li>
+                                                    <span class="dragable"><i class="fa fa-arrows"></i></span>
+                                                    <a href="#">
+                                                        <img src="images/img2.jpg" />
+                                                        <p>
+                                                            Trang web phát đọc quyền giải ngoại hạng Anh <br />
+                                                            <span>Thể thao 247 - 25/12/2014</span>
+                                                        </p>
+                                                    </a>
+                                                    <a href="#" class="btn btnDelSuggest"><i class="fa fa-trash-o"></i></a>
+                                                </li>
+                                                <li>
+                                                    <span class="dragable"><i class="fa fa-arrows"></i></span>
+                                                    <a href="#">
+                                                        <img src="images/img3.jpg" />
+                                                        <p>
+                                                            Trang web phát đọc quyền giải ngoại hạng Anh <br />
+                                                            <span>Thể thao 247 - 25/12/2014</span>
+                                                        </p>
+                                                    </a>
+                                                    <a href="#" class="btn btnDelSuggest"><i class="fa fa-trash-o"></i></a>
+                                                </li>
+                                                 <li>
+                                                    <span class="dragable"><i class="fa fa-arrows"></i></span>
+                                                    <a href="#">
+                                                        <img src="images/img4.jpg" />
+                                                        <p>
+                                                            Trang web phát đọc quyền giải ngoại hạng Anh <br />
+                                                            <span>Thể thao 247 - 25/12/2014</span>
+                                                        </p>
+                                                    </a>
+                                                    <a href="#" class="btn btnDelSuggest"><i class="fa fa-trash-o"></i></a>
+                                                </li>
+                                            </ul><!--end autoSuggest -->
+                                        </div><!--end searchSuggest -->
+                                    </div>
+                                </div><!-- end addToPlaylist -->
+                                            
+                            </div><!--end formUpload -->
+                            
+                            <div class="actionForm fixAction clearfix"> 
+                                <button type="submit" class="btn btnPrimary">Lưu danh sách phát</button> 
+                                <button id="btnCancelEditRelate" type="button" class="btn btnDefault">Hủy</button> 
+                            </div>
+                            
+                        </div><!--end boxContent -->
+                        
+                    </div><!--end content -->
+                        
+                    
+                </div><!--end wrapperContent -->
+            
+            </div><!--end containerTable -->
+        
+        </div><!--end container -->
+        
+    </div><!--end wrapper -->
+    
+</body>
+
+</html>

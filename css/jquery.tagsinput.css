@@ -1,0 +1,11 @@
+div.tagsinput { border:1px solid #dddddd; background: #FFF; padding:10px; width:300px; height:100px; overflow-y: auto;border-radius: 4px;-webkit-border-radius: 4px;	-moz-border-radius: 4px;}
+div.tagsinput span.tag { -moz-border-radius:3px; -webkit-border-radius:3px;border-radius:3px; display: block; float: left; padding: 10px; text-decoration:none; background: #78cd51; color: #ffffff; margin-right: 5px; margin-bottom:5px; font-size:13px;}
+div.tagsinput span.tag a {color: #ffffff;display: inline-block;font-size: 13px;font-weight: 500;text-align: center;text-decoration: none;width: 15px;} 
+div.tagsinput input { width:102px !important; margin:0px; font-family: helvetica; font-size: 13px; border:1px solid transparent; padding:5px; background: transparent; color: #000; outline:0px;  margin-right:5px; margin-bottom:5px; }
+div.tagsinput div { display:block; float: left; } 
+.tags_clear { clear: both; width: 100%; height: 0px; }
+.not_valid {background: #FBD8DB !important; color: #90111A !important;}
+#tags_tag {
+	width:100px !important;	
+	height:40px;
+}

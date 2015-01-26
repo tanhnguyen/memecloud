@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1200px" /> 
+    <title>Ad Mannager Global | MeMe Cloud</title>
+    <!-- Global CSS -->
+    <link href="css/font-awesome.css" type="text/css" rel="stylesheet">
+    <link href="css/reset.css" type="text/css" rel="stylesheet">
+    <link href="css/global.css" type="text/css" rel="stylesheet">
+    <!-- End Global CSS -->
+    
+    <!-- Page CSS -->
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <!-- End Page CSS -->
+    
+    <!-- Global Script -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/placeholder.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
+    <script src="js/disableScrollBar.js"></script>
+    <script src="js/global.js"></script>
+    <!-- End Global Script -->
+    
+</head>
+
+<body>
+	
+    <div class="wrapper">
+    	
+        <div class="container">
+        
+            <div class="containerTable">
+            
+                <div class="sidebar">
+                    <div class="sidebarFixed">
+                        <div class="logo">
+                            <a href="#" title="Meme Cloud">Meme Cloud</a>
+                        </div>
+                        
+                        <div class="mainMenu">
+    
+                            <ul id="nav">
+                              <li><a href="#"><i class="fa fa-video-camera"></i>Video <span class="icoDown fa fa-chevron-down"></span></a>
+                                <ul>
+                                  <li><a href="allVideo.html">Tất cả video</a></li>
+                                  <li><a href="allVideoApprove.html">Duyệt video<span class="numMenu">20</span></a></li>
+                                  <li><a href="upload.html">Upload video mới</a></li>
+                                  <li><a href="uploadBulk.html">Upload cùng lúc</a></li>
+                                  <li><a href="allPlaylist.html">Danh sách phát</a></li>
+                                  <li><a href="categoryManager.html">Quản lý chuyên mục</a></li>
+                                  <li><a href="playerSetting.html">Cài đặt Player</a></li>
+                                </ul>
+                              </li>
+                              <li><a href="#"><i class="fa fa-bar-chart-o"></i>Thống kê<span class="icoDown fa fa-chevron-down"></span></a>
+                                <ul>
+                                  <li><a href="analytics.html">Tổng quan</a></li>
+                                  <li><a href="#">Theo người dùng</a></li>
+                                </ul>
+                              </li>
+                              <li><a href="userManager.html"><i class="fa fa-user"></i>Người dùng</a>
+                              </li>
+                              <li><a href="#" class="active"><i class="fa fa-bullhorn"></i>Quảng cáo<span class="icoDown fa fa-chevron-down"></span></a>
+                                <ul>
+                                  <li><a href="domainManager.html">Quản lý trang web</a></li>
+                                  <li><a href="adMannagerGlobal.html" class="selected">Quản lý Adtag</a></li>
+                                </ul>
+                              </li>
+                            </ul>
+                            
+                        </div>
+                    </div>
+                    
+                </div><!--end sidebar -->
+                
+                <div class="wrapperContent">
+                	
+                    <div class="header clearfix">
+                    	
+                        <div class="searchBox">
+                        	<button type="submit" class="btn btnSearch"><i class="fa fa-search"></i></button>
+                            <input class="formGlobal seachInput" placeholder="Nhập tên hoặc id video..." />
+                        </div>
+                        
+                        <div class="account">
+                        	<div class="userAcount dropdown">
+                            	<a href="#" class="channelName btnDropdown">Đời sống & pháp luật<i class="fa fa-caret-down"></i></a>
+                                <div class="dropdownDiv menuChannel">
+                                	<div class="swithChannel">Quản lý channel:</div>
+                                    <ul class="scrollable">
+                                        <li><a href="#">Tin Mới</a></li>
+                                        <li><a href="#">Thể Thao 24/7</a></li>
+                                        <li><a href="#">Người Đưa Tin</a></li>
+                                        <li><a href="#">Tin Mới</a></li>
+                                        <li><a href="#">Thể Thao 24/7</a></li>
+                                        <li><a href="#">Người Đưa Tin</a></li>
+                                        <li><a href="#">Tin Mới</a></li>
+                                        <li><a href="#">Thể Thao 24/7</a></li>
+                                        <li><a href="#">Người Đưa Tin</a></li>
+                                        <li><a href="#">Tin Mới</a></li>
+                                        <li><a href="#">Thể Thao 24/7</a></li>
+                                        <li><a href="#">Người Đưa Tin</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        	<div class="notification"><a href="upload.html" class="notificationIco"><i class="fa fa-cloud-upload"></i></a></div>
+                        	<div class="notification dropdown">
+                            	<a href="#" class="notificationIco btnDropdown"><i class="fa fa-bell"></i><span class="numNof">2</span></a>
+                                <div class="dropdownDiv boxNof">
+                                	<div class="headBoxNof">
+                                    	Bạn có 2 thông báo <a href="#" class="btnReadAsAll">Đã xem tất cả</a>
+                                    </div>
+                                    <ul class="listNof scrollable">
+                                    	<li>
+                                        	<a class="unread" href="activityVideo.html">Video <span class="boldNof">Muôn kiểu hành xử 'xấu' của người Việt khi gặp Cảnh sát giao thông</span> do <span class="boldNof">Phước Anh</span> upload đề nghị bạn duyệt <br /> <span class="timeNof">25 phút trước</span></a>
+                                            <a href="#" class="btnRead tooltipText" title="Đã xem"><i class="fa fa-circle-o"></i></a>
+                                        </li>
+                                        <li>
+                                        	<a href="#">Video <span class="boldNof">Ebola chính thức bị dập tắt</span> do <span class="boldNof">bạn</span> upload đã sẵn sàng sử dụng <br /> <span class="timeNof">2 phút trước</span></a>
+                                        </li>
+                                        <li>
+                                        	<a class="unread" href="activityVideo.html">Video <span class="boldNof">Muôn kiểu hành xử 'xấu' của người Việt khi gặp Cảnh sát giao thông</span> do <span class="boldNof">Phước Anh</span> upload đề nghị bạn duyệt <br /> <span class="timeNof">25 phút trước</span></a>
+                                            <a href="#" class="btnRead tooltipText" title="Đã xem"><i class="fa fa-circle-o"></i></a>
+                                        </li>
+                                        <li>
+                                        	<a href="#"><span class="boldNof">Bạn</span> đang có 4 video chờ duyệt <br /> <span class="timeNof">1 giờ trước</span></a>
+                                        </li>
+                                        <li>
+                                        	<a href="#">Video <span class="boldNof">Đua xe trái phép tại Bình Dương</span> của <span class="boldNof">Bạn</span> bị <span class="boldNof">Kevin Vu</span> từ chối <br /> <span class="timeNof">2 giờ trước</span></a>
+                                        </li>
+                                        <li>
+                                        	<a href="#">Video <span class="boldNof">Ebola chính thức bị dập tắt</span> do <span class="boldNof">bạn</span> upload đã sẵn sàng sử dụng <br /> <span class="timeNof">2 phút trước</span></a>
+                                        </li>
+                                        <li>
+                                        	<a href="#"><span class="boldNof">Bạn</span> đang có 4 video chờ duyệt <br /> <span class="timeNof">1 giờ trước</span></a>
+                                        </li>
+                                        <li>
+                                        	<a href="#">Video <span class="boldNof">Đua xe trái phép tại Bình Dương</span> của <span class="boldNof">Bạn</span> bị <span class="boldNof">Kevin Vu</span> từ chối <br /> <span class="timeNof">2 giờ trước</span></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="notification userAcount dropdown">
+                            	<a href="#" class="notificationIco userName btnDropdown"><i class="fa fa-cog"></i></a>
+                                <a href="#" class="userThumb"><img src="images/user.jpg" alt="Messi" /></a>
+                                <ul class="dropdownDiv menuAccount">
+                                	<li><a href="changeProfile.html"><i class="fa fa-edit"></i>Đổi thông tin tài khoản</a></li>
+                                    <!--<li><a href="#"><i class="fa fa-user"></i>Tình trạng tài khoản</a></li>-->
+                                    <li><a href="support.html"><i class="fa fa-envelope"></i>Hỗ trợ</a></li>
+                                    <li><a href="#"><i class="fa fa-sign-out"></i>Thoát</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                    </div><!--end header -->
+                    
+                    
+                    <div class="content">
+                        
+                        <div class="boxContent">
+                            <ul class="breadcrumb clearfix">
+                                <li><a href="#">Meme Cloud</a><i class="fa fa-angle-right"></i></li>
+                                <li><a href="#">Quảng cáo</a><i class="fa fa-angle-right"></i></li>
+                                <li class="active">
+                                    Quản lý Adtag
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="tabsGlobal">
+                            <ul class="tabs">
+                                <li class="current"><a href="#installGlobal">Cài đặt chung </a></li>
+                                <li><a href="#installWeb">Cài đặt theo website</a></li>
+                            </ul>
+                            
+                            <div class="tabsContentGlobal install">
+                            
+                                <div id="installGlobal" class="tableData current">
+                                    
+                                    <div class="formUpload clearfix">
+                                        
+                                        <div class="col50p">
+                                            <div class="col50pBox clearfix">
+                                                <div class="headColBox">
+                                                    QUẢNG CÁO TRÊN DESKTOP
+                                                    <span class="icoDesktop">
+                                                    	<i class="fa fa-desktop"></i>
+                                                    </span>
+                                                </div>
+                                                <div class="rowInstall selected">
+                                                	<div class="formGroup">
+                                                        <div class="checkbox">
+                                                            <label>
+                                                                <input type="checkbox" checked> Preroll (Quảng cáo xuất hiện trước khi phát video)
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="formGroupInstall">
+                                                    	<label>Adtag chính:</label>
+                                                        <input type="text" class="formGlobal" placeholder="http://ads.google.com/" />
+                                                        <select class="formGlobal selectInstall">
+                                                        	<option>IMA</option>
+                                                            <option>VAST</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="formGroupInstall">
+                                                    	<label>Adtag phụ:</label>
+                                                        <input type="text" class="formGlobal" placeholder="http://ad.org.vn/" />
+                                                        <select class="formGlobal selectInstall">
+                                                        	<option>VAST</option>
+                                                            <option>IMA</option>
+                                                        </select>
+                                                        <p class="note">Trong trường hợp adtag chính không có quảng cáo sẽ thay bằng adtag phụ này</p>
+                                                    </div>
+                                                </div><!-- end rowInstall -->
+                                                <div class="rowInstall">
+                                                	<div class="formGroup">
+                                                        <div class="checkbox">
+                                                            <label>
+                                                                <input type="checkbox"> Midroll (Quảng cáo xuất hiện khi đang phát video)
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="formGroupInstall">
+                                                    	<label>Adtag chính:</label>
+                                                        <input type="text" class="formGlobal" placeholder="http://ads.google.com/" />
+                                                        <select class="formGlobal selectInstall">
+                                                        	<option>IMA</option>
+                                                            <option>VAST</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="formGroupInstall">
+                                                    	<label>Adtag phụ:</label>
+                                                        <input type="text" class="formGlobal" placeholder="http://ad.org.vn/" />
+                                                        <select class="formGlobal selectInstall">
+                                                        	<option>VAST</option>
+                                                            <option>IMA</option>
+                                                        </select>
+                                                        <p class="note">Trong trường hợp adtag chính không có quảng cáo sẽ thay bằng adtag phụ này</p>
+                                                    </div>
+                                                    <div class="formGroupInstall">
+                                                    	<label>Thời gian</label>	
+                                                        <div class="inputTime">
+                                                            <input type="text" class="formGlobal" placeholder="10" />
+                                                            <p class="note">Thời gian quảng cáo sẽ hiển thị (tính bằng giây)</p>
+                                                        </div>
+                                                    </div>
+                                                </div><!-- end rowInstall -->
+                                                <div class="rowInstall last">
+                                                	<div class="formGroup">
+                                                        <div class="checkbox">
+                                                            <label>
+                                                                <input type="checkbox"> Postroll (Quảng cáo xuất hiện khi kết thúc phát video)
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="formGroupInstall">
+                                                    	<label>Adtag chính:</label>
+                                                        <input type="text" class="formGlobal" placeholder="http://ads.google.com/" />
+                                                        <select class="formGlobal selectInstall">
+                                                        	<option>IMA</option>
+                                                            <option>VAST</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="formGroupInstall">
+                                                    	<label>Adtag phụ:</label>
+                                                        <input type="text" class="formGlobal" placeholder="http://ad.org.vn/" />
+                                                        <select class="formGlobal selectInstall">
+                                                        	<option>VAST</option>
+                                                            <option>IMA</option>
+                                                        </select>
+                                                        <p class="note">Trong trường hợp adtag chính không có quảng cáo sẽ thay bằng adtag phụ này</p>
+                                                    </div>
+                                                </div><!-- end rowInstall -->
+                                            </div>
+                                        </div>
+                                        <div class="col50p">
+                                            <div class="col50pBox clearfix">
+                                                <div class="headColBox">
+                                                    QUẢNG CÁO TRÊN DI ĐỘNG
+                                                    <span class="icoMobile">
+                                                    	<i class="fa fa-mobile"></i>
+                                                    </span>
+                                                </div>
+                                                <div class="sameDesktop">
+                                                	<div class="checkbox">
+                                                        <label>
+                                                            <input type="checkbox"> Chạy quảng cáo giống trên desktop
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="rowInstall">
+                                                	<div class="formGroup">
+                                                        <div class="checkbox">
+                                                            <label>
+                                                                <input type="checkbox"> Preroll (Quảng cáo xuất hiện trước khi phát video)
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="formGroupInstall">
+                                                    	<label>Adtag chính:</label>
+                                                        <input type="text" class="formGlobal" placeholder="http://ads.google.com/" />
+                                                        <select class="formGlobal selectInstall">
+                                                        	<option>IMA</option>
+                                                            <option>VAST</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="formGroupInstall">
+                                                    	<label>Adtag phụ:</label>
+                                                        <input type="text" class="formGlobal" placeholder="http://ad.org.vn/" />
+                                                        <select class="formGlobal selectInstall">
+                                                        	<option>VAST</option>
+                                                            <option>IMA</option>
+                                                        </select>
+                                                        <p class="note">Trong trường hợp adtag chính không có quảng cáo sẽ thay bằng adtag phụ này</p>
+                                                    </div>
+                                                </div><!-- end rowInstall -->
+                                                <div class="rowInstall">
+                                                	<div class="formGroup">
+                                                        <div class="checkbox">
+                                                            <label>
+                                                                <input type="checkbox"> Midroll (Quảng cáo xuất hiện khi đang phát video)
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="formGroupInstall">
+                                                    	<label>Adtag chính:</label>
+                                                        <input type="text" class="formGlobal" placeholder="http://ads.google.com/" />
+                                                        <select class="formGlobal selectInstall">
+                                                        	<option>IMA</option>
+                                                            <option>VAST</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="formGroupInstall">
+                                                    	<label>Adtag phụ:</label>
+                                                        <input type="text" class="formGlobal" placeholder="http://ad.org.vn/" />
+                                                        <select class="formGlobal selectInstall">
+                                                        	<option>VAST</option>
+                                                            <option>IMA</option>
+                                                        </select>
+                                                        <p class="note">Trong trường hợp adtag chính không có quảng cáo sẽ thay bằng adtag phụ này</p>
+                                                    </div>
+                                                    <div class="formGroupInstall">
+                                                    	<label>Thời gian</label>	
+                                                        <div class="inputTime">
+                                                            <input type="text" class="formGlobal" placeholder="10" />
+                                                            <p class="note">Thời gian quảng cáo sẽ hiển thị (tính bằng giây)</p>
+                                                        </div>
+                                                    </div>
+                                                </div><!-- end rowInstall -->
+                                                <div class="rowInstall last">
+                                                	<div class="formGroup">
+                                                        <div class="checkbox">
+                                                            <label>
+                                                                <input type="checkbox"> Postroll (Quảng cáo xuất hiện khi kết thúc phát video)
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="formGroupInstall">
+                                                    	<label>Adtag chính:</label>
+                                                        <input type="text" class="formGlobal" placeholder="http://ads.google.com/" />
+                                                        <select class="formGlobal selectInstall">
+                                                        	<option>IMA</option>
+                                                            <option>VAST</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="formGroupInstall">
+                                                    	<label>Adtag phụ:</label>
+                                                        <input type="text" class="formGlobal" placeholder="http://ad.org.vn/" />
+                                                        <select class="formGlobal selectInstall">
+                                                        	<option>VAST</option>
+                                                            <option>IMA</option>
+                                                        </select>
+                                                        <p class="note">Trong trường hợp adtag chính không có quảng cáo sẽ thay bằng adtag phụ này</p>
+                                                    </div>
+                                                </div><!-- end rowInstall -->
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                    
+                                    <div class="actionForm fixAction clearfix">
+                                        <button type="submit" class="btn btnPrimary">Lưu lại</button>
+                                        <button type="button" class="btn btnDefault">Hủy</button>
+                                    </div>
+                                    
+                                </div><!--end #installGlobal -->
+                                
+                                <div id="installWeb" class="tableData">
+                                
+                                    <div class="formUpload clearfix">
+                                    
+                                    	<div class="col100p">
+                                        	<div class="col100pBox fixPadding clearfix" style="background-color:#fafbfb;">
+                                                <div class="col50p">
+                                                	<div class="formGroup">
+                                                    	<label>Cài đặt cho website:</label>
+                                                        <select class="formGlobal">
+                                                        	<option value="option1">Tin mới (tinmoi.vn)</option>
+                                                            <option value="option2">Người đưa tin (nguoiduatin.vn)</option>
+                                                            <option value="option3">Thể thao 247 (thethao247.vn)</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col50p">
+                                                	<div class="formGroup">
+                                                        <div class="checkbox">
+                                                            <label>
+                                                                <input type="radio" name="radio" value="radio2"> Sử dụng cài đặt chung
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                	<div class="formGroup">
+                                                        <div class="checkbox">
+                                                            <label>
+                                                                <input type="radio" name="radio" value="radio1" checked> Bật cài đặt quảng cáo theo từng website 
+                                                            </label>
+                                                        </div>
+                                                        <p class="note">Khi bật chế độ này cài đặt quảng cáo chung sẽ bị vô hiệu. Các website chưa cài đặt quảng cáo sẽ không hiển thị quảng cáo</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col50p">
+                                            <div class="col50pBox clearfix">
+                                                <div class="headColBox">
+                                                    QUẢNG CÁO TRÊN DESKTOP
+                                                    <span class="icoDesktop">
+                                                    	<i class="fa fa-desktop"></i>
+                                                    </span>
+                                                </div>
+                                                <div class="rowInstall">
+                                                	<div class="formGroup">
+                                                        <div class="checkbox">
+                                                            <label>
+                                                                <input type="checkbox"> Preroll (Quảng cáo xuất hiện trước khi phát video)
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="formGroupInstall">
+                                                    	<label>Adtag chính:</label>
+                                                        <input type="text" class="formGlobal" placeholder="http://ads.google.com/" />
+                                                        <select class="formGlobal selectInstall">
+                                                        	<option>IMA</option>
+                                                            <option>VAST</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="formGroupInstall">
+                                                    	<label>Adtag phụ:</label>
+                                                        <input type="text" class="formGlobal" placeholder="http://ad.org.vn/" />
+                                                        <select class="formGlobal selectInstall">
+                                                        	<option>VAST</option>
+                                                            <option>IMA</option>
+                                                        </select>
+                                                        <p class="note">Trong trường hợp adtag chính không có quảng cáo sẽ thay bằng adtag phụ này</p>
+                                                    </div>
+                                                </div><!-- end rowInstall -->
+                                                <div class="rowInstall">
+                                                	<div class="formGroup">
+                                                        <div class="checkbox">
+                                                            <label>
+                                                                <input type="checkbox"> Midroll (Quảng cáo xuất hiện khi đang phát video)
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="formGroupInstall">
+                                                    	<label>Adtag chính:</label>
+                                                        <input type="text" class="formGlobal" placeholder="http://ads.google.com/" />
+                                                        <select class="formGlobal selectInstall">
+                                                        	<option>IMA</option>
+                                                            <option>VAST</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="formGroupInstall">
+                                                    	<label>Adtag phụ:</label>
+                                                        <input type="text" class="formGlobal" placeholder="http://ad.org.vn/" />
+                                                        <select class="formGlobal selectInstall">
+                                                        	<option>VAST</option>
+                                                            <option>IMA</option>
+                                                        </select>
+                                                        <p class="note">Trong trường hợp adtag chính không có quảng cáo sẽ thay bằng adtag phụ này</p>
+                                                    </div>
+                                                    <div class="formGroupInstall">
+                                                    	<label>Thời gian</label>	
+                                                        <div class="inputTime">
+                                                            <input type="text" class="formGlobal" placeholder="10" />
+                                                            <p class="note">Thời gian quảng cáo sẽ hiển thị (tính bằng giây)</p>
+                                                        </div>
+                                                    </div>
+                                                </div><!-- end rowInstall -->
+                                                <div class="rowInstall last">
+                                                	<div class="formGroup">
+                                                        <div class="checkbox">
+                                                            <label>
+                                                                <input type="checkbox"> Postroll (Quảng cáo xuất hiện khi kết thúc phát video)
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="formGroupInstall">
+                                                    	<label>Adtag chính:</label>
+                                                        <input type="text" class="formGlobal" placeholder="http://ads.google.com/" />
+                                                        <select class="formGlobal selectInstall">
+                                                        	<option>IMA</option>
+                                                            <option>VAST</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="formGroupInstall">
+                                                    	<label>Adtag phụ:</label>
+                                                        <input type="text" class="formGlobal" placeholder="http://ad.org.vn/" />
+                                                        <select class="formGlobal selectInstall">
+                                                        	<option>VAST</option>
+                                                            <option>IMA</option>
+                                                        </select>
+                                                        <p class="note">Trong trường hợp adtag chính không có quảng cáo sẽ thay bằng adtag phụ này</p>
+                                                    </div>
+                                                </div><!-- end rowInstall -->
+                                            </div>
+                                        </div>
+                                        <div class="col50p">
+                                            <div class="col50pBox clearfix">
+                                                <div class="headColBox">
+                                                    QUẢNG CÁO TRÊN DI ĐỘNG
+                                                    <span class="icoMobile">
+                                                    	<i class="fa fa-mobile"></i>
+                                                    </span>
+                                                </div>
+                                                <div class="sameDesktop">
+                                                	<div class="checkbox">
+                                                        <label>
+                                                            <input type="checkbox"> Chạy quảng cáo giống trên desktop
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="rowInstall">
+                                                	<div class="formGroup">
+                                                        <div class="checkbox">
+                                                            <label>
+                                                                <input type="checkbox"> Preroll (Quảng cáo xuất hiện trước khi phát video)
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="formGroupInstall">
+                                                    	<label>Adtag chính:</label>
+                                                        <input type="text" class="formGlobal" placeholder="http://ads.google.com/" />
+                                                        <select class="formGlobal selectInstall">
+                                                        	<option>IMA</option>
+                                                            <option>VAST</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="formGroupInstall">
+                                                    	<label>Adtag phụ:</label>
+                                                        <input type="text" class="formGlobal" placeholder="http://ad.org.vn/" />
+                                                        <select class="formGlobal selectInstall">
+                                                        	<option>VAST</option>
+                                                            <option>IMA</option>
+                                                        </select>
+                                                        <p class="note">Trong trường hợp adtag chính không có quảng cáo sẽ thay bằng adtag phụ này</p>
+                                                    </div>
+                                                </div><!-- end rowInstall -->
+                                                <div class="rowInstall">
+                                                	<div class="formGroup">
+                                                        <div class="checkbox">
+                                                            <label>
+                                                                <input type="checkbox"> Midroll (Quảng cáo xuất hiện khi đang phát video)
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="formGroupInstall">
+                                                    	<label>Adtag chính:</label>
+                                                        <input type="text" class="formGlobal" placeholder="http://ads.google.com/" />
+                                                        <select class="formGlobal selectInstall">
+                                                        	<option>IMA</option>
+                                                            <option>VAST</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="formGroupInstall">
+                                                    	<label>Adtag phụ:</label>
+                                                        <input type="text" class="formGlobal" placeholder="http://ad.org.vn/" />
+                                                        <select class="formGlobal selectInstall">
+                                                        	<option>VAST</option>
+                                                            <option>IMA</option>
+                                                        </select>
+                                                        <p class="note">Trong trường hợp adtag chính không có quảng cáo sẽ thay bằng adtag phụ này</p>
+                                                    </div>
+                                                    <div class="formGroupInstall">
+                                                    	<label>Thời gian</label>	
+                                                        <div class="inputTime">
+                                                            <input type="text" class="formGlobal" placeholder="10" />
+                                                            <p class="note">Thời gian quảng cáo sẽ hiển thị (tính bằng giây)</p>
+                                                        </div>
+                                                    </div>
+                                                </div><!-- end rowInstall -->
+                                                <div class="rowInstall last">
+                                                	<div class="formGroup">
+                                                        <div class="checkbox">
+                                                            <label>
+                                                                <input type="checkbox"> Postroll (Quảng cáo xuất hiện khi kết thúc phát video)
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="formGroupInstall">
+                                                    	<label>Adtag chính:</label>
+                                                        <input type="text" class="formGlobal" placeholder="http://ads.google.com/" />
+                                                        <select class="formGlobal selectInstall">
+                                                        	<option>IMA</option>
+                                                            <option>VAST</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="formGroupInstall">
+                                                    	<label>Adtag phụ:</label>
+                                                        <input type="text" class="formGlobal" placeholder="http://ad.org.vn/" />
+                                                        <select class="formGlobal selectInstall">
+                                                        	<option>VAST</option>
+                                                            <option>IMA</option>
+                                                        </select>
+                                                        <p class="note">Trong trường hợp adtag chính không có quảng cáo sẽ thay bằng adtag phụ này</p>
+                                                    </div>
+                                                </div><!-- end rowInstall -->
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                    
+                                    <div class="actionForm fixAction clearfix">
+                                        <button type="submit" class="btn btnPrimary">Lưu lại</button>
+                                        <button type="button" class="btn btnDefault">Hủy</button>
+                                    </div>
+                                    
+                                </div><!--end #installWeb -->
+                                
+                            </div><!--end tabsContentGlobal -->
+                            
+                        </div><!--end tabsGlobal -->
+                        
+                        
+                        
+                    </div><!--end content -->
+                        
+                    
+                </div><!--end wrapperContent -->
+            
+            </div><!--end containerTable -->
+        
+        </div><!--end container -->
+        
+    </div><!--end wrapper -->
+    
+</body>
+
+</html>
