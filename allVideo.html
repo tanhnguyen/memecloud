@@ -98,18 +98,18 @@
                                 <div class="dropdownDiv menuChannel">
                                 	<div class="swithChannel">Quản lý channel:</div>
                                     <ul class="scrollable">
-                                        <li><a href="#">Tin Mới</a></li>
-                                        <li><a href="#">Thể Thao 24/7</a></li>
-                                        <li><a href="#">Người Đưa Tin</a></li>
-                                        <li><a href="#">Tin Mới</a></li>
-                                        <li><a href="#">Thể Thao 24/7</a></li>
-                                        <li><a href="#">Người Đưa Tin</a></li>
-                                        <li><a href="#">Tin Mới</a></li>
-                                        <li><a href="#">Thể Thao 24/7</a></li>
-                                        <li><a href="#">Người Đưa Tin</a></li>
-                                        <li><a href="#">Tin Mới</a></li>
-                                        <li><a href="#">Thể Thao 24/7</a></li>
-                                        <li><a href="#">Người Đưa Tin</a></li>
+                                        <li><a href="#">Tin Mới</a><button type="button" class="btnEditChannel" title="Chỉnh sửa channel" data-popup-target="#editChannel"><i class="fa fa-pencil"></i></button></li>
+                                        <li><a href="#">Thể Thao 24/7</a><button type="button" class="btnEditChannel" title="Chỉnh sửa channel" data-popup-target="#editChannel"><i class="fa fa-pencil"></i></button></li>
+                                        <li><a href="#">Người Đưa Tin</a><button type="button" class="btnEditChannel" title="Chỉnh sửa channel" data-popup-target="#editChannel"><i class="fa fa-pencil"></i></button></li>
+                                        <li><a href="#">Tin Mới</a><button type="button" class="btnEditChannel" title="Chỉnh sửa channel" data-popup-target="#editChannel"><i class="fa fa-pencil"></i></button></li>
+                                        <li><a href="#">Thể Thao 24/7</a><button type="button" class="btnEditChannel" title="Chỉnh sửa channel" data-popup-target="#editChannel"><i class="fa fa-pencil"></i></button></li>
+                                        <li><a href="#">Người Đưa Tin</a><button type="button" class="btnEditChannel" title="Chỉnh sửa channel" data-popup-target="#editChannel"><i class="fa fa-pencil"></i></button></li>
+                                        <li><a href="#">Tin Mới</a><button type="button" class="btnEditChannel" title="Chỉnh sửa channel" data-popup-target="#editChannel"><i class="fa fa-pencil"></i></button></li>
+                                        <li><a href="#">Thể Thao 24/7</a><button type="button" class="btnEditChannel" title="Chỉnh sửa channel" data-popup-target="#editChannel"><i class="fa fa-pencil"></i></button></li>
+                                        <li><a href="#">Người Đưa Tin</a><button type="button" class="btnEditChannel" title="Chỉnh sửa channel" data-popup-target="#editChannel"><i class="fa fa-pencil"></i></button></li>
+                                        <li><a href="#">Tin Mới</a><button type="button" class="btnEditChannel" title="Chỉnh sửa channel" data-popup-target="#editChannel"><i class="fa fa-pencil"></i></button></li>
+                                        <li><a href="#">Thể Thao 24/7</a><button type="button" class="btnEditChannel" title="Chỉnh sửa channel" data-popup-target="#editChannel"><i class="fa fa-pencil"></i></button></li>
+                                        <li><a href="#">Người Đưa Tin</a><button type="button" class="btnEditChannel" title="Chỉnh sửa channel" data-popup-target="#editChannel"><i class="fa fa-pencil"></i></button></li>
                                     </ul>
                                 </div>
                             </div>
@@ -874,6 +874,35 @@
                 </div>
             </div>
         </div>
+        
+        <div id="editChannel" style="width:500px;" class="popup">
+            <div class="popup-body">
+                <div class="popupHead">
+                    <h3>Chỉnh sửa channel</h3>
+                    <span class="popup-exit"><i class="fa fa-times"></i></span>
+                </div>
+                <div class="popupContent clearfix">
+                    <div class="popupContentBox clearfix">
+                        <div class="formGroup inline clearfix">
+                            <label>Tên channel:</label>
+                            <input type="text" class="formGlobal" value="Tin mới" />
+                        </div>
+                        <div class="formGroup inline clearfix">
+                            <label>Thể loại:</label>
+                            <select class="formGlobal">
+                                <option>Thể thao</option>
+                                <option>Tin tức</option>
+                                <option>Giải trí</option>
+                            </select>
+                        </div>
+                        <div class="actionForm">
+                            <button type="submit" class="btn btnPrimary">Lưu thông tin</button>
+                            <button type="button" class="btn btnDefault">Hủy</button>
+                        </div>
+                    </div><!--end popupContentBox -->
+                </div>
+            </div>
+        </div><!--end #editUser -->
         
     </div><!-- end popupWrapper -->
     
